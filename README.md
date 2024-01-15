@@ -1,7 +1,19 @@
-# Vue 3 + Vite
+# Progetto Mid Term
+# Nome Repo: proj-html-vuejs
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Team 2
+- Martina Ambrosini (Main & Home Section)   
+- Giorgio Belardelli (Footer & Contacts Section)   
+- Cosimo Archip (Header & About Section)    
 
-## Recommended IDE Setup
+## Punti di forza del gruppo
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- NO ANSIA!!!!
+- ALLENATI ANCHE PER NOI!!!! 
+- NO Perfezionismo eccessivo!!!!
+- E tisanina prima di andare a letto!!!!
+
+# Istruzioni Dev
+
+- npm add -D sass
+- npm install
