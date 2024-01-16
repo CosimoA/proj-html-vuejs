@@ -5,9 +5,13 @@ export default {
 </script> 
 
 <template>
-    <section>
-        <h1 class="mt-5 mb-3">Contacts</h1>
-    </section>
+    <main>
+        <h1>Contacts</h1>
+    </main>
 </template> 
 
-<style scoped></style>
+<style lang="scss" scoped>
+@use '../styles/general.scss';
+@use '../styles/partials/mixins' as *;
+@use '../styles/partials/variables' as *;
+</style>
