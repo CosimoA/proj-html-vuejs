@@ -16,7 +16,6 @@
 
     @else if $type =="space_b" {
         justify-content: space-between;
-        align-items: center;
     }
 
     @else if $type =="start-center" {
@@ -31,6 +30,11 @@
 
     @else if $type =="row" {
         flex-direction: row;
+    }
+
+    @else if $type =="wrap_b" {
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 

@@ -6,6 +6,8 @@ import { store } from './store';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 
+
+
 export default {
   components: {
     AppHeader,
@@ -18,8 +20,7 @@ export default {
     }
   },
   created() {
-    // this.getCardsInfo();
-    // this.getArchetypesList();
+
   }
 }
 
@@ -31,7 +32,7 @@ export default {
   <AppFooter />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use './styles/general.scss';
 // @use './styles/partials/mixins' as *;
 // @use './styles/partials/variables' as *;
