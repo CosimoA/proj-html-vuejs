@@ -77,7 +77,6 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .top-footer{
-    border: 1px dashed blue;
     padding: 5rem 2rem;
     color: $text-dark-gray;
     line-height: 1.5rem;
