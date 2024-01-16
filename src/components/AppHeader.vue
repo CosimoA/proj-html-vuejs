@@ -122,15 +122,6 @@ header {
   transform: scale(0.8);
   transition: opacity 0.3s ease, transform 0.3s ease;
 
-  .menu-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 10px;
-    flex-grow: 1;
-  }
-
   .close-button {
     align-self: center;
     cursor: pointer;
@@ -170,16 +161,64 @@ header {
     &:active {
       transform: scale(1.1);
     }
-
-    // img {
-    //   width: 100%;
-    //   height: auto;
-    // }
   }
 }
 
 .fullscreen-menu.visible {
   opacity: 1;
   transform: scale(1);
+}
+
+@media all and (min-width: 767px) and (max-width: 1024px) {
+
+  header {
+    section {
+      justify-content: center;
+    }
+
+    .hamburger-icon {
+      display: none;
+    }
+
+    .fullscreen-menu {
+      display: flex;
+      justify-content: center;
+      position: static;
+      padding: 1rem;
+      background-color: transparent;
+      opacity: 1;
+      transform: scale(1);
+
+      .close-button {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      .menu-link {
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0 10px;
+
+        &:hover {
+          font-weight: bolder;
+        }
+      }
+
+      .menu-link.active {
+        color: black;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1025px) {
+  // altro
 }
 </style>
