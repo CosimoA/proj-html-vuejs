@@ -38,39 +38,55 @@ export default {
 <template>
   <header>
     <section>
+      <!-- LOGO -->
       <div class="logo">
         <router-link to="/" ref="homeLink" class="menu-link" :class="{ 'active': currentPage === 'Home' }">
           <img src="../assets/cropped-Group-39-2x.png" alt="Logo">
         </router-link>
       </div>
 
+      <!-- NAVBAR -->
+      <div class="nav-container">
+        <nav class="fullscreen-menu" :class="{ 'visible': menuOpen }">
+          <div class="close-button" @click="toggleMenu">
+            <div class="circle">
+              <i class="fa-solid fa-times"></i>
+            </div>
+          </div>
+          <ul>
+            <li v-for="link in navLinksList" :key="link">
+              <router-link :to="link.toLowerCase() === 'home' ? '/' : link.toLowerCase()" class="menu-link"
+                :class="{ 'active': link === currentPage }" @click="setActiveLink(link)">
+                {{ link }}
+              </router-link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- PURCHASE BUTTON -->
+      <div class="button-container">
+        <div class="purchase-button">
+        </div>
+      </div>
+      <!-- HAMBURGER ICON -->
       <div class="hamburger-icon" @click="toggleMenu">
         <span>
           <i class="fa-solid fa-bars"></i>
         </span>
       </div>
     </section>
-    <nav class="fullscreen-menu" :class="{ 'visible': menuOpen }">
-      <div class="close-button" @click="toggleMenu">
-        <div class="circle">
-          <i class="fa-solid fa-times"></i>
-        </div>
-      </div>
-      <ul>
-        <li v-for="link in navLinksList" :key="link">
-          <router-link :to="link.toLowerCase() === 'home' ? '/' : link.toLowerCase()" class="menu-link"
-            :class="{ 'active': link === currentPage }" @click="setActiveLink(link)">
-            {{ link }}
-          </router-link>
-        </li>
-      </ul>
-    </nav>
+
   </header>
 </template>
 
 
 <style lang="scss" scoped>
+.p10 {
+  padding: 10px;
+}
+
 header {
+  display: flex;
   min-height: 97px;
   width: 100%;
   position: fixed;
@@ -81,12 +97,23 @@ header {
   section {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
     align-items: center;
-    padding: 16px 30px 4px 35px;
+    padding: 16px 30px 0 35px;
 
     a img {
       display: block;
     }
+
+    >div {
+      padding: 10px;
+    }
+
+    .button-container {
+      display: none;
+    }
+
   }
 
   .logo,
@@ -173,7 +200,20 @@ header {
 
   header {
     section {
-      justify-content: center;
+      justify-content: space-between;
+
+      .button-container {
+        display: block;
+        width: 249px;
+        height: 54px;
+
+        .purchase-button {
+          display: none;
+          // background-color: pink;
+        }
+      }
+
+
     }
 
     .hamburger-icon {
@@ -181,10 +221,9 @@ header {
     }
 
     .fullscreen-menu {
-      display: flex;
-      justify-content: center;
+      display: block;
       position: static;
-      padding: 1rem;
+      height: 54px;
       background-color: transparent;
       opacity: 1;
       transform: scale(1);
@@ -195,14 +234,16 @@ header {
 
       ul {
         display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
         list-style: none;
-        text-align: center;
         padding: 0;
         margin: 0;
       }
 
       .menu-link {
-        font-size: 18px;
+        font-size: 19px;
         font-weight: normal;
         margin: 0 10px;
 
@@ -217,6 +258,8 @@ header {
     }
   }
 }
+
+
 
 @media all and (min-width: 1025px) {
   // altro
