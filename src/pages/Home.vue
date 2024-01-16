@@ -48,26 +48,57 @@ export default {
 
 <template>
     <main>
-        <div class="container">
-            <div class="slider-wrapper p-2" tabindex="0" style="/* background-color: brown; */">
-                <div class="item p-2" style="/* background-color: rgb(207, 107, 13); */">
-                    <div class="text">
-                        <h2>17 YEARS OF EXPERIENCE</h2>
-                        <h1>{{ slides[activeItem].title }} <br><span>{{ slides[activeItem].title_col }}</span></h1>
-                        <img src="/divider.svg" alt="">
-                        <p>
-                            {{ slides[activeItem].text }}
-                        </p>
-                        <div class="read">
-                            <a href="#"> READ MORE</a>
+        <section style="background-color: #fafafa; ">
+            <div class="section_container">
+                <div class="slider-wrapper p-2" tabindex="0">
+                    <div class="item p-5" style="/* background-color: rgb(207, 107, 13) */;">
+                        <div class="item_container">
+                            <h2>17 YEARS OF EXPERIENCE</h2>
+                            <h1>{{ slides[activeItem].title }} <br><span>{{ slides[activeItem].title_col }}</span></h1>
+                            <img src="/divider.svg" alt="">
+                            <p>
+                                {{ slides[activeItem].text }}
+                            </p>
+                            <div class="read d-flex justify-content-between align-items-center">
+                                <div class="button_read">
+                                    <a href="#"> READ MORE</a>
+                                </div>
+                                <div class="thumbs d-flex">
+                                    <div class="prev m-1 d-flex justify-content-center align-items-center"
+                                        @click="prevItem">
+                                        <i class="fa-solid fa-caret-left fa-xl" style="color: #ffffff;"></i>
+                                    </div>
+                                    <div class="next m-1 d-flex justify-content-center align-items-center"
+                                        @click="nextItem">
+                                        <i class="fa-solid fa-caret-right fa-xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div> <!--end thumbs-->
+                            </div>
+                        </div> <!--end text-->
+                        <div class="item_img">
+                            <div class="img_container">
+                                <img :src="slides[activeItem].image" />
+                            </div>
+                            <div class="text_container"></div>
+                            <ul class="nav" style="background-color: rgb(238, 238, 238, 1); width: fit-content;">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Facebook</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Instagram</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Twitter</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Youtube</a>
+                                </li>
+                            </ul> <!--end nav-->
                         </div>
-                    </div> <!--end text-->
-                    <div class="img">
-
-                    </div>
-                </div> <!-- end item-->
-            </div> <!--end slider-wrapper-->
-        </div> <!--end container-->
+                    </div> <!-- end item-->
+                </div> <!--end slider-wrapper-->
+            </div> <!--end container-->
+        </section> <!--end section-->
     </main>
 </template> 
 
@@ -77,12 +108,13 @@ export default {
 h2 {
     color: #76db6a;
     font-weight: normal;
-    font-size: 1.5em;
-    word-spacing: 0.5em;
+    font-size: 1.3em;
+    word-spacing: 0.3em;
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 2.9em;
+    font-weight: bold;
 }
 
 span {
@@ -93,8 +125,8 @@ span {
     @include flex (wrap_b)
 }
 
-.read {
-    background-color: black;
+.button_read {
+    background-color: #323232;
     border-radius: 2em;
     padding: 0.6em;
     text-align: center;
@@ -103,7 +135,7 @@ span {
     transition: all 0.3s ease;
 }
 
-.read:hover {
+.button_read:hover {
     cursor: pointer;
     background-color: #00d9a6;
     filter: brightness(110%);
@@ -116,5 +148,40 @@ a {
     color: white;
     font-size: 0.9em;
     box-shadow: 1em;
+}
+
+li a {
+    color: black;
+    font-weight: 450;
+    padding: 0.6em;
+}
+
+li a:hover {
+    color: #00d4a2;
+    cursor: grab;
+}
+
+.prev,
+.next {
+    width: 3em;
+    height: 3em;
+    margin: 10px 0;
+    border-radius: 50%;
+    background: #ccc;
+    // position: absolute;
+    left: 50%;
+    cursor: pointer;
+}
+
+.item_img {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item_img img {
+    width: 75%;
 }
 </style>

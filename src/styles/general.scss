@@ -1,34 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
 
 main {
-    padding-top: 97px;
+  padding-top: 97px;
 }
-
-
-
 
 // MEDIA QUERY
 
 // Mobile
 
-
-
-
 // Tablet
 @media all and (max-width: 767px) {
-    .container {
-        max-width: 767px;
-    }
+  .container {
+    max-width: 767px;
+  }
 }
 
 // Desktop
 @media all and (max-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
+  .container {
+    max-width: 1024px;
+  }
 }
