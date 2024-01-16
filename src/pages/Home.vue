@@ -48,10 +48,10 @@ export default {
 
 <template>
     <main>
-        <section style="background-color: #fafafa; ">
+        <section style="background-color: #fafafa;">
             <div class="section_container">
-                <div class="slider-wrapper p-2" tabindex="0">
-                    <div class="item p-5" style="/* background-color: rgb(207, 107, 13) */;">
+                <div class="slider-wrapper pt-5 px-5 " tabindex="0">
+                    <div class="item" style="/* background-color: rgb(207, 107, 13) */;">
                         <div class="item_container">
                             <h2>17 YEARS OF EXPERIENCE</h2>
                             <h1>{{ slides[activeItem].title }} <br><span>{{ slides[activeItem].title_col }}</span></h1>
@@ -73,28 +73,30 @@ export default {
                                         <i class="fa-solid fa-caret-right fa-xl" style="color: #ffffff;"></i>
                                     </div>
                                 </div> <!--end thumbs-->
-                            </div>
+                            </div> <!--end read-->
                         </div> <!--end text-->
                         <div class="item_img">
                             <div class="img_container">
                                 <img :src="slides[activeItem].image" />
                             </div>
-                            <div class="text_container"></div>
-                            <ul class="nav" style="background-color: rgb(238, 238, 238, 1); width: fit-content;">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Facebook</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Instagram</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Twitter</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link">Youtube</a>
-                                </li>
-                            </ul> <!--end nav-->
-                        </div>
+                            <div class="text_container mt-4"
+                                style="background-color: rgb(238, 238, 238, 1); width: fit-content;">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Facebook</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Instagram</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Twitter</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link">Youtube</a>
+                                    </li>
+                                </ul> <!--end nav-->
+                            </div> <!--end text_container-->
+                        </div> <!--end item_img-->
                     </div> <!-- end item-->
                 </div> <!--end slider-wrapper-->
             </div> <!--end container-->
@@ -169,19 +171,51 @@ li a:hover {
     border-radius: 50%;
     background: #ccc;
     // position: absolute;
-    left: 50%;
     cursor: pointer;
 }
 
+.prev:hover {
+    background-color: #00d4a2;
+}
+
+.next:hover {
+    background-color: #00d4a2;
+}
+
 .item_img {
-    padding: 5px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .item_img img {
-    width: 75%;
+    width: 90%;
 }
+
+
+// // MEDIA QUERY
+
+// // Tablet
+// @media all and (min-width: 767px) {
+//     .container {
+//         max-width: 767px;
+//     }
+
+//     .item_img {
+//         flex-direction: row-reverse;
+//         justify-content: space-between;
+//         align-items: center;
+
+//     }
+
+// }
+
+// // Desktop
+// @media all and (max-width: 1024px) {
+//     .container {
+//         max-width: 1024px;
+//     }
+// }
 </style>
