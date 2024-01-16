@@ -29,6 +29,7 @@ export default {
 <template>
   <AppHeader></AppHeader>
   <router-view></router-view>
+  <AppFooter />
 </template>
 
 <style lang="scss" scoped>
