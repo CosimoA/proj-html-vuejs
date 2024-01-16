@@ -32,6 +32,11 @@
     @else if $type =="row" {
         flex-direction: row;
     }
+
+    @else if $type =="wrap_b" {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 //         @include flex (wrap);
