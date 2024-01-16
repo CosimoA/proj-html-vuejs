@@ -19,7 +19,7 @@ export default {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <section>
+      <section class="gray-gradient">
         <div class="contact-card">
           <i class="fa-light fa-location-dot"></i>
           <h1>ADDRESS:</h1>
@@ -36,6 +36,22 @@ export default {
           <h1>WORK HOURS:</h1>
           <p>Monday - Friday 09.00 - 23.00</p>
           <p>Sunday 09.00 - 16.00</p>
+        </div>
+      </section>
+      <section>
+        <h1>Please get in touch with us</h1>
+        <img src="/divider.svg" />
+        <p>
+          When, while the lovely valley teems with vapour around me, and the
+          meridian sun strikes the upper surface of the impenetrable foliage of
+          my trees, and but a few stray gleams steal into the inner
+          sanctuary.When, while the lovely valley teems with vapour around me,
+          and the meridian sun strikes the upper surface of the impenetrable
+          foliage of my trees.
+        </p>
+        <h2>Send message</h2>
+        <div class="form-container">
+          <form></form>
         </div>
       </section>
     </div>
@@ -73,14 +89,26 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    line-height: 2rem;
     background-color: $white;
     width: 90%;
     margin: 0 auto 1rem auto;
     padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    h1 {
+      color: $text-dark-gray;
+      margin: 2rem;
+    }
+    p {
+      color: #565656;
+    }
+    i {
+      color: $green;
+    }
   }
 }
 
-section {
+.gray-gradient {
   background: linear-gradient(to bottom, #efefef, #ffffff);
 }
 </style>
