@@ -50,7 +50,7 @@ export default {
     <main>
         <section style="background-color: #fafafa;">
             <div class="section_container">
-                <div class="slider-wrapper pt-5 px-5 " tabindex="0">
+                <div class="slider-wrapper" tabindex="0">
                     <div class="item" style="/* background-color: rgb(207, 107, 13) */;">
                         <div class="item_container">
                             <h2>17 YEARS OF EXPERIENCE</h2>
@@ -101,11 +101,83 @@ export default {
                 </div> <!--end slider-wrapper-->
             </div> <!--end container-->
         </section> <!--end section-->
+        <section>
+            <div class="features d-flex flex-column justify-content-between">
+                <div class="feat_text d-flex flex-column align-items-center">
+                    <p id="elegant"> We Are Here To Make Your <span>Website</span> Look More <span>Elegant</span> And
+                        Stylish!
+                    </p>
+                    <div style="text-align: center; ">
+                        <img src="/divider.svg" alt="">
+                    </div>
+                    <div class="button_view mt-4 mb-5">
+                        <a href="#"> VIEW ALL</a>
+                    </div>
+                </div> <!--end feat text-->
+                <div class="featcard_container ">
+                    <div class="feat_card p-4">
+                        <div class="card_body ">
+                            <div class="card_text px-3 pt-5">
+                                <i class="fa-solid fa-gauge-high fa-xl mb-5" style="color: #63E6BE; font-size: 4em;"></i>
+                                <p style="font-size: 2em;">Speed Optimization</p>
+                                <p> Far far away, behind the word mountains, far from the countries Vokalia Separated..</p>
+                            </div> <!--end card_text-->
+                        </div> <!--end card body-->
+                    </div> <!--end feat_card-->
+                </div> <!--end featcard_container-->
+                <div class="featcard_container ">
+                    <div class="feat_card p-4">
+                        <div class="card_body ">
+                            <div class="card_text px-3 pt-5">
+                                <i class="fa-solid fa-tablet-screen-button fa-xl mb-5"
+                                    style="color: #63E6BE; font-size: 4em;"></i>
+                                <p style="font-size: 2em;">Web Design</p>
+                                <p> Far far away, behind the word mountains, far from the countries Vokalia Separated..</p>
+                            </div> <!--end card_text-->
+                        </div> <!--end card body-->
+                    </div> <!--end feat_card-->
+                </div> <!--end featcard_container-->
+                <div class="featcard_container ">
+                    <div class="feat_card p-4">
+                        <div class="card_body ">
+                            <div class="card_text px-3 pt-5">
+                                <i class="fa-solid fa-cloud fa-xl mb-5" style="color: #63E6BE; font-size: 4em;"></i>
+                                <p style="font-size: 2em;">Cloud Solutions</p>
+                                <p> Far far away, behind the word mountains, far from the countries Vokalia Separated..</p>
+                            </div> <!--end card_text-->
+                        </div> <!--end card body-->
+                    </div> <!--end feat_card-->
+                </div> <!--end featcard_container-->
+                <div class="featcard_container ">
+                    <div class="feat_card p-4">
+                        <div class="card_body ">
+                            <div class="card_text px-3 pt-5">
+                                <i class="fa-solid fa-stopwatch fa-xl mb-5" style="color: #63E6BE; font-size: 4em;"></i>
+                                <p style="font-size: 2em;">Online Marketing</p>
+                                <p> Far far away, behind the word mountains, far from the countries Vokalia Separated..</p>
+                            </div> <!--end card_text-->
+                        </div> <!--end card body-->
+                    </div> <!--end feat_card-->
+                </div> <!--end featcard_container-->
+            </div> <!--end features-->
+        </section>
     </main>
 </template> 
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixins' as *;
+
+section {
+    padding-top: 6em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+#elegant {
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 600;
+}
 
 h2 {
     color: #76db6a;
@@ -194,6 +266,27 @@ li a:hover {
     width: 90%;
 }
 
+.button_view {
+    border-radius: 2em;
+    padding: 0.6em;
+    text-align: center;
+    width: 10em;
+    background-image: linear-gradient(to right, #8ddc63, #1cd595);
+    box-shadow: 0px 5px 16px 6px rgba(171, 237, 222, );
+    transition: all 0.3s ease;
+}
+
+.button_view:hover {
+    background-color: black;
+}
+
+
+.featcard_container {
+    border-radius: 2em;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f9f9f9;
+    margin-top: 3em;
+}
 
 // // MEDIA QUERY
 
