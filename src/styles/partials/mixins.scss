@@ -16,7 +16,6 @@
 
     @else if $type =="space_b" {
         justify-content: space-between;
-        align-items: center;
     }
 
     @else if $type =="start-center" {

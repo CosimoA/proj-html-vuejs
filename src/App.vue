@@ -6,6 +6,8 @@ import { store } from './store';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 
+
+
 export default {
   components: {
     AppHeader,
