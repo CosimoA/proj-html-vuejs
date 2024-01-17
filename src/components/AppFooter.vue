@@ -15,7 +15,9 @@ export default {
                             <a href="#"><img src="/group-logo.png" alt="logo gruppo"></a>
                         </div>
                         <div class="text-container">
-                            <p>While the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.While the lovely valley teems with vapour around me.</p>
+                            <p>While the lovely valley teems with vapour around me, and the meridian sun strikes the upper
+                                surface of the impenetrable foliage of my trees.While the lovely valley teems with vapour
+                                around me.</p>
                         </div>
                     </div>
                     <div class="col">
@@ -68,7 +70,6 @@ export default {
             </div>
         </div>
     </header>
-
 </template>
 
 <style lang="scss" scoped>
@@ -76,30 +77,33 @@ export default {
 @use '../styles/partials/mixins' as *;
 @use '../styles/partials/variables' as *;
 
-.top-footer{
+.top-footer {
     padding: 5rem 2rem;
     color: $text-dark-gray;
     line-height: 1.5rem;
-    .row{   
+
+    .row {
         display: flex;
         flex-direction: column;
-        .col{
+
+        .col {
             width: 100%;
             margin-bottom: 3rem;
-            
-            h2{
+
+            h2 {
                 margin-bottom: 1.5rem;
             }
 
-            .divider{
+            .divider {
                 margin-bottom: 1.5rem;
                 width: 4.5rem;
             }
 
-            ul{
+            ul {
                 list-style-type: none;
-                li{
-                    a:hover{
+
+                li {
+                    a:hover {
                         color: $green;
                     }
                 }
@@ -108,33 +112,33 @@ export default {
         }
     }
 }
-.bot-footer{
+
+.bot-footer {
     background: linear-gradient(to right, #444444, #191919);
     color: $text-light-gray;
     padding: 2.5rem;
     line-height: 2rem;
     font-weight: 500;
 
-    ul{ 
+    ul {
 
-        li{
-            
+        li {
+
             display: inline;
             margin: .8rem;
-            a{
+
+            a {
                 color: $text-light-gray;
             }
         }
     }
 }
 
-img{
+img {
     max-width: 100%;
 }
 
 a {
     color: $text-dark-gray;
     text-decoration: none;
-}
-
-</style>  
+}</style>  
