@@ -263,8 +263,39 @@ export default {
                 </div>
             </div> <!--end projects-->
         </section>
-        <section style="background-color: #fafafa; margin-top: 4em; height: 720px">
+        <section style="background-color: #f4f4f4; margin-top: 4em; height: 750px">
+            <div class="user_container">
+                <div class="numbers">
 
+                </div>
+                <div class="text_love p-5">
+                    <p style=" font-size: 3em;"> We <span>Love</span> What We Do</p>
+                    <img src="/divider.svg" alt="">
+                    <p style="margin-top: 1.5em;">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                        the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean. Separated they live in Bookmarksgrove.
+                    </p>
+                    <div class="checked">
+                        <i class="fa-solid fa-check me-2" style="color: #1cd595;">
+                        </i>
+                        <span style="color: #000000; font-weight: lighter;">far far away, behind mountains
+                        </span>
+                    </div>
+                    <div class="checked">
+                        <i class="fa-solid fa-check me-2" style="color: #1cd595;">
+                        </i>
+                        <span style="color: #000000; font-weight: lighter;">large language ocean
+                        </span>
+                    </div>
+                    <div class="checked">
+                        <i class="fa-solid fa-check me-2" style="color: #1cd595;">
+                        </i>
+                        <span style="color: #000000; font-weight: lighter;">far from the countries
+                        </span>
+                    </div>
+                </div>
+            </div>
         </section>
         <section style="background-color: ##f9f9f9;">
             <div class=" plan">
@@ -461,185 +492,5 @@ export default {
 </template> 
 
 <style lang="scss" scoped>
-@use '../styles/partials/mixins' as *;
-
-section {
-    padding-top: 6em;
-    padding-left: 5em;
-    padding-right: 5em;
-}
-
-#elegant {
-    font-size: 2.2em;
-    text-align: center;
-    font-weight: 600;
-}
-
-h2 {
-    color: #76db6a;
-    font-weight: normal;
-    font-size: 1.3em;
-    word-spacing: 0.3em;
-}
-
-h1 {
-    font-size: 2.9em;
-    font-weight: bold;
-}
-
-span {
-    color: #00d4a2;
-}
-
-.item {
-    @include flex (wrap_b)
-}
-
-.button_read {
-    background-color: #323232;
-    border-radius: 2em;
-    padding: 0.6em;
-    text-align: center;
-    width: 10em;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: all 0.3s ease;
-}
-
-.button_read:hover {
-    cursor: pointer;
-    background-color: #00d9a6;
-    filter: brightness(110%);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #00d9a6;
-    transform: scale(0.9)
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.9em;
-    box-shadow: 1em;
-}
-
-li a {
-    color: black;
-    font-weight: 450;
-    padding: 0.6em;
-}
-
-li a:hover {
-    color: #00d4a2;
-    cursor: grab;
-}
-
-.prev,
-.next {
-    width: 3em;
-    height: 3em;
-    margin: 10px 0;
-    border-radius: 50%;
-    background: #ccc;
-    // position: absolute;
-    cursor: pointer;
-}
-
-.prev:hover {
-    background-color: #00d4a2;
-}
-
-.next:hover {
-    background-color: #00d4a2;
-}
-
-.item_img {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.item_img img {
-    width: 90%;
-}
-
-.button_view {
-    border-radius: 2em;
-    padding: 0.6em;
-    text-align: center;
-    width: 10em;
-    background-image: linear-gradient(to right, #8ddc63, #1cd595);
-    box-shadow: 0px 5px 16px 6px rgba(171, 237, 222, );
-    transition: all 0.3s ease;
-}
-
-.button_view:hover {
-    transition: all 0.5s ease;
-    transition: 2s;
-    background-color: #323232;
-}
-
-
-.featcard_container {
-    border-radius: 2em;
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #f9f9f9;
-    margin-top: 3em;
-}
-
-
-.misscard_container {
-    position: relative;
-}
-
-.box_card {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
-
-.overlay {
-    z-index: 9;
-    margin: 60px 140px 30px;
-}
-
-
-.box_card img {
-    width: 80%;
-    border-radius: 20px;
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-.designing {
-    background-color: #ffffff;
-    height: 100px;
-    width: 100%;
-}
-
-// // MEDIA QUERY
-
-// // Tablet
-// @media all and (min-width: 767px) {
-//     .container {
-//         max-width: 767px;
-//     }
-
-//     .item_img {
-//         flex-direction: row-reverse;
-//         justify-content: space-between;
-//         align-items: center;
-
-//     }
-
-// }
-
-// // Desktop
-// @media all and (max-width: 1024px) {
-//     .container {
-//         max-width: 1024px;
-//     }
-// }
+@use '../styles/home.scss';
 </style>
