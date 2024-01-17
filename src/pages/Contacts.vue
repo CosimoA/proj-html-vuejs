@@ -35,7 +35,7 @@ export default {
           <p>info@phloxbusiness.com</p>
         </div>
         <div class="contact-card">
-          <i class="far fa-clock"></i>
+          <i class="fa-regular fa-clock"></i>
           <h1>WORK HOURS:</h1>
           <p>Monday - Friday 09.00 - 23.00</p>
           <p>Sunday 09.00 - 16.00</p>
