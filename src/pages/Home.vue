@@ -263,6 +263,200 @@ export default {
                 </div>
             </div> <!--end projects-->
         </section>
+        <section style="background-color: #fafafa; margin-top: 4em; height: 720px">
+
+        </section>
+        <section style="background-color: ##f9f9f9;">
+            <div class=" plan">
+                <div class="text_plan d-flex flex-column justify-content-between">
+                    <p id="elegant"> With <span>Live Chat 24/7</span> Support
+                    </p>
+                    <div style="text-align: center; ">
+                        <img src="/divider.svg" alt="">
+                    </div>
+                    <p style="margin-top: 1.5em;">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,there live
+                        the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.
+                    </p>
+                </div>
+                <div class="plan_container mt-4">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card" style="border-radius: 20px;">
+                                <div class="card-header p-0" style="background-color: #2d2d2d;">
+                                    <div class=" designing mt-3">
+                                        <p
+                                            style="text-align: center; font-size: 1.8em; font-weight: 700; margin-bottom: 0;">
+                                            DESIGNING
+                                        </p>
+                                        <h6 style="text-align: center; font-size: 0.9em ">
+                                            All Designs
+                                        </h6>
+                                    </div>
+                                    <div class="price" style="color: #ffffff;">
+                                        <p style="text-align: center; font-size: 3em; margin:0 auto;">
+                                            <span style="color: #ffffff; font-size: 0.7em;">$</span>
+                                            10
+                                            <span style="color: #ffffff; font-size: 0.5em;">
+                                                / DESIGN
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center mt-4">
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Creative Design
+                                            Enabled
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Vibrant Color Usage
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Eye Catching Design
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Extreme Typography
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Exceptional Design
+                                        </span>
+                                    </div>
+                                </div> <!--end card body-->
+                            </div> <!--card-->
+                        </div> <!--end col-->
+                        <div class="col">
+                            <div class="card" style="border-radius: 20px;">
+                                <div class="card-header p-0"
+                                    style="background-image: linear-gradient(to right, #8ddc63, #1cd595);">
+                                    <div class=" designing mt-3">
+                                        <p
+                                            style="text-align: center; font-size: 1.8em; font-weight: 700; margin-bottom: 0;">
+                                            DEVELOPMENT
+                                        </p>
+                                        <h6 style="text-align: center; font-size: 0.9em ">
+                                            WordPress Projects
+                                        </h6>
+                                    </div>
+                                    <div class="price" style="color: #ffffff;">
+                                        <p style="text-align: center; font-size: 3em; margin:0 auto;">
+                                            <span style="color: #ffffff; font-size: 0.7em;">$</span>
+                                            15
+                                            <span style="color: #ffffff; font-size: 0.5em;">
+                                                / DESIGN
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center mt-4">
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Creative Design
+                                            Enabled
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Vibrant Color Usage
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Eye Catching Design
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Extreme Typography
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Exceptional Design
+                                        </span>
+                                    </div>
+                                </div> <!--end card body-->
+                            </div> <!--card-->
+                        </div> <!--end col-->
+                        <div class="col">
+                            <div class="card" style="border-radius: 20px;">
+                                <div class="card-header p-0" style="background-color: #2d2d2d;">
+                                    <div class=" designing mt-3">
+                                        <p
+                                            style="text-align: center; font-size: 1.8em; font-weight: 700; margin-bottom: 0;">
+                                            SEO
+                                        </p>
+                                        <h6 style="text-align: center; font-size: 0.9em ">
+                                            Web Products
+                                        </h6>
+                                    </div>
+                                    <div class="price" style="color: #ffffff;">
+                                        <p style="text-align: center; font-size: 3em; margin:0 auto;">
+                                            <span style="color: #ffffff; font-size: 0.7em;">$</span>
+                                            10
+                                            <span style="color: #ffffff; font-size: 0.5em;">
+                                                / DESIGN
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center mt-4">
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Creative Design
+                                            Enabled
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Vibrant Color Usage
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Eye Catching Design
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Extreme Typography
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Exceptional Design
+                                        </span>
+                                    </div>
+                                </div> <!--end card body-->
+                            </div> <!--card-->
+                        </div> <!--end col-->
+                    </div> <!--row-->
+                </div> <!--end plan container-->
+            </div> <!--end plan-->
+        </section>
     </main>
 </template> 
 
@@ -416,6 +610,13 @@ li a:hover {
     width: 80%;
     border-radius: 20px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.designing {
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
 }
 
 // // MEDIA QUERY
