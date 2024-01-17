@@ -6,7 +6,7 @@ export default {
 
 <template>
   <header>
-    <div class="container">
+    <div class="footer-container">
       <div class="top-footer">
         <div class="row">
           <div class="col">

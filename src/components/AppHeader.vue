@@ -1,17 +1,12 @@
 <script>
-
 export default {
   name: "AppHeader",
   data() {
     return {
       menuOpen: false,
-      currentPage: 'Home',
-      navLinksList: [
-        'Home',
-        'About',
-        'Contacts'
-      ],
-    }
+      currentPage: "Home",
+      navLinksList: ["Home", "About", "Contacts"],
+    };
   },
   methods: {
     toggleMenu() {
@@ -28,7 +23,7 @@ export default {
       this.navLinksList.forEach((link) => {
         const linkElement = document.querySelector(`.menu-link-${link}`);
         if (linkElement) {
-          linkElement.classList.remove('active');
+          linkElement.classList.remove("active");
         }
       });
     },
@@ -43,16 +38,15 @@ export default {
   },
   mounted() {
     // Aggiungi un listener per rilevare i cambiamenti nella larghezza dello schermo
-    window.addEventListener('resize', this.updateNavVisibility);
+    window.addEventListener("resize", this.updateNavVisibility);
     // Chiama il metodo all'avvio del componente
     this.updateNavVisibility();
   },
   destroyed() {
     // Rimuovi il listener quando il componente viene distrutto per evitare memory leaks
-    window.removeEventListener('resize', this.updateNavVisibility);
+    window.removeEventListener("resize", this.updateNavVisibility);
   },
-}
-
+};
 </script>
 
 <template>
@@ -60,23 +54,32 @@ export default {
     <section>
       <!-- LOGO -->
       <div class="logo">
-        <router-link to="/" ref="homeLink" class="menu-link" :class="{ 'active': currentPage === 'Home' }">
-          <img src="../assets/cropped-Group-39-2x.png" alt="Logo">
+        <router-link
+          to="/"
+          ref="homeLink"
+          class="menu-link"
+          :class="{ active: currentPage === 'Home' }"
+        >
+          <img src="../assets/cropped-Group-39-2x.png" alt="Logo" />
         </router-link>
       </div>
 
       <!-- NAVBAR -->
       <div class="nav-container" v-show="menuOpen">
-        <nav class="fullscreen-menu" :class="{ 'visible': menuOpen }">
+        <nav class="fullscreen-menu" :class="{ visible: menuOpen }">
           <div class="close-button" @click="toggleMenu">
             <div class="circle">
               <i class="fa-solid fa-times"></i>
             </div>
           </div>
           <ul>
-            <li v-for=" link  in  navLinksList " :key="link">
-              <router-link :to="link.toLowerCase() === 'home' ? '/' : link.toLowerCase()" class="menu-link"
-                :class="{ 'active': link === currentPage }" @click="setActiveLink(link)">
+            <li v-for="link in navLinksList" :key="link">
+              <router-link
+                :to="link.toLowerCase() === 'home' ? '/' : link.toLowerCase()"
+                class="menu-link"
+                :class="{ active: link === currentPage }"
+                @click="setActiveLink(link)"
+              >
                 {{ link }}
               </router-link>
             </li>
@@ -85,8 +88,7 @@ export default {
       </div>
       <!-- PURCHASE BUTTON -->
       <div class="button-container">
-        <div class="purchase-button">
-        </div>
+        <div class="purchase-button"></div>
       </div>
       <!-- HAMBURGER ICON -->
       <div class="hamburger-icon" @click="toggleMenu">
@@ -95,10 +97,8 @@ export default {
         </span>
       </div>
     </section>
-
   </header>
 </template>
-
 
 <style lang="scss" scoped>
 .p10 {
@@ -126,14 +126,13 @@ header {
       display: block;
     }
 
-    >div {
+    > div {
       padding: 10px;
     }
 
     .button-container {
       display: none;
     }
-
   }
 
   .logo,
@@ -150,7 +149,6 @@ header {
   .menu-link.active {
     color: #777;
   }
-
 }
 
 .fullscreen-menu {
@@ -221,7 +219,6 @@ header {
 }
 
 @media all and (min-width: 767px) and (max-width: 1024px) {
-
   header {
     section {
       justify-content: space-between;
@@ -236,8 +233,6 @@ header {
           background-color: pink;
         }
       }
-
-
     }
 
     .hamburger-icon {
@@ -283,8 +278,6 @@ header {
   }
 }
 
-
-
 @media all and (min-width: 1025px) {
   header {
     section {
@@ -300,8 +293,6 @@ header {
           background-color: pink;
         }
       }
-
-
     }
 
     .hamburger-icon {

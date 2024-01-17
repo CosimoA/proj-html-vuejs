@@ -57,10 +57,22 @@ export default {
         <h1>Send message</h1>
         <div class="form-container">
           <form>
-            <input type="text" placeholder="Full name*" />
-            <input type="text" placeholder="Email*" />
-            <input type="text" placeholder="Please Insert Phone number" />
-            <input type="text" placeholder="Message" />
+            <div class="input-box">
+              <label class="form-label">Full name*</label>
+              <input type="text" class="form-input" required />
+            </div>
+            <div class="input-box">
+              <label class="form-label">Email*</label>
+              <input type="text" class="form-input" required />
+            </div>
+            <div class="input-box">
+              <label class="form-label">Please insert phone number</label>
+              <input type="text" class="form-input" />
+            </div>
+            <div class="input-box">
+              <label class="form-label">Message</label>
+              <input type="text" class="form-input" />
+            </div>
             <input type="button" value="SEND NOW" id="submit-button" />
           </form>
         </div>
@@ -149,15 +161,35 @@ main {
 
     .form-container {
       margin: 3rem 0;
-      input {
-        border: 0;
-        border-bottom: 2px solid #444444;
+
+      .input-box {
+        position: relative;
         width: 100%;
-        margin-bottom: 4rem;
-        color: $text-dark-gray;
+        height: 3rem;
+        border-bottom: 2px solid #444444;
+        margin-bottom: 3rem;
+
+        .form-label {
+          position: absolute;
+          top: 20px;
+          left: 5px;
+          transform: translateY(-50%);
+          font-size: 0.7rem;
+          transition: 0.5s;
+          pointer-events: none;
+        }
+        .form-input {
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          border: 0;
+          color: $text-dark-gray;
+          outline: none;
+        }
       }
     }
   }
+
   #submit-button {
     background: linear-gradient(to right, #99e15e, $green);
     border: 0;
