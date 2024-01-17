@@ -6,6 +6,9 @@ export default {
 
 <template>
   <main>
+    <span>
+      <i class="fas fa-times"></i>
+    </span>
     <div class="container">
       <div class="title-container">
         <h1>Contact Page</h1>
@@ -69,6 +72,7 @@ main {
     background: linear-gradient(to bottom, #f5f5f5, $white);
     color: $green;
     padding: 3rem;
+
     h1 {
       font-size: 40px;
       font-weight: 700;
@@ -77,6 +81,7 @@ main {
 
   .map-container {
     max-width: 100%;
+
     iframe {
       width: 100%;
       height: 500px;
@@ -95,13 +100,16 @@ main {
     margin: 0 auto 1rem auto;
     padding: 2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
     h1 {
       color: $text-dark-gray;
       margin: 2rem;
     }
+
     p {
       color: #565656;
     }
+
     i {
       color: $green;
     }

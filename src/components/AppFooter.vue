@@ -92,9 +92,11 @@ export default {
   padding: 5rem 2rem;
   color: $text-dark-gray;
   line-height: 1.5rem;
+
   .row {
     display: flex;
     flex-direction: column;
+
     .col {
       width: 100%;
       margin-bottom: 3rem;
@@ -110,6 +112,7 @@ export default {
 
       ul {
         list-style-type: none;
+
         li {
           a:hover {
             color: $green;
@@ -119,6 +122,7 @@ export default {
     }
   }
 }
+
 .bot-footer {
   background: linear-gradient(to right, #444444, #191919);
   color: $text-light-gray;
@@ -130,6 +134,7 @@ export default {
     li {
       display: inline;
       margin: 0.8rem;
+
       a {
         color: $text-light-gray;
       }
