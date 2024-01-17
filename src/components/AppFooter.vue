@@ -69,13 +69,13 @@ export default {
         <small>© 2024 PHLOX BUSINESS THEME.</small>
         <ul>
           <li>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
           </li>
         </ul>
       </div>

@@ -13,7 +13,7 @@ export default {
       store,
     };
   },
-  created() {},
+  created() { },
 };
 </script>
 
