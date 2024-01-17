@@ -161,6 +161,31 @@ export default {
                 </div> <!--end featcard_container-->
             </div> <!--end features-->
         </section>
+        <section style="background-color: #fafafa; margin-top: 4em; height: 1080px">
+            <div class="mission">
+                <div class="miss_text p-2">
+                    <p style=" font-size: 3em;">Learn more about our <span>missions</span></p>
+                    <img src="/divider.svg" alt="">
+                    <p style="margin-top: 1.5em;"> Far far away, behind the word mountains, far from the countries Vokalia
+                        and
+                        Consonantia, there live
+                        the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean. Separated they live in Bookmarksgrove.
+                    </p>
+                    <div class="button_view mt-5 mb-5">
+                        <a href="#"> READ MORE</a>
+                    </div>
+                </div> <!--end miss text-->
+                <div class="misscard_container">
+                    <div class="box">
+                        <img src="/busy-architect-PYVKWM4-1024x872.jpg" alt="">
+                    </div>
+                    <div class="box overlay">
+                        <img src="/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
+                    </div>
+                </div> <!--end miss card container-->
+            </div> <!--end mission-->
+        </section>
     </main>
 </template> 
 
@@ -286,6 +311,31 @@ li a:hover {
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #f9f9f9;
     margin-top: 3em;
+}
+
+
+.misscard_container {
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.overlay {
+    z-index: 9;
+    margin: 60px 140px 30px;
+}
+
+
+.box img {
+    width: 80%;
+    border-radius: 20px;
 }
 
 // // MEDIA QUERY
