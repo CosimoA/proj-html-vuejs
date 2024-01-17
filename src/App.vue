@@ -2,7 +2,6 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 import { store } from "./store";
-import "@fortawesome/fontawesome-free/css/all.css";
 
 export default {
   components: {
@@ -14,7 +13,7 @@ export default {
       store,
     };
   },
-  created() {},
+  created() { },
 };
 </script>
 
