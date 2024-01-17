@@ -56,7 +56,7 @@ export default {
 
         <h1>Send message</h1>
         <div class="form-container">
-          <form>
+          <form class="custom-form">
             <div class="input-box">
               <label class="form-label">Full name*</label>
               <input type="text" class="form-input" required />
@@ -162,7 +162,7 @@ main {
     .form-container {
       margin: 3rem 0;
 
-      .input-box {
+      .custom-form .input-box {
         position: relative;
         width: 100%;
         height: 3rem;
@@ -171,7 +171,7 @@ main {
 
         .form-label {
           position: absolute;
-          top: 20px;
+          top: -5px;
           left: 5px;
           transform: translateY(-50%);
           font-size: 0.7rem;
@@ -185,6 +185,16 @@ main {
           border: 0;
           color: $text-dark-gray;
           outline: none;
+
+          &:placeholder-shown + .form-label {
+            top: 20px;
+            font-size: 0.7rem;
+          }
+
+          &:focus + .form-label {
+            top: 10px;
+            font-size: 0.6rem;
+          }
         }
       }
     }
