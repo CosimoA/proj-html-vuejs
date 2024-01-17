@@ -6,6 +6,9 @@ export default {
 
 <template>
   <main>
+    <span>
+      <i class="fas fa-times"></i>
+    </span>
     <div class="container">
       <div class="title-container">
         <h1>Contact Page</h1>
@@ -21,18 +24,18 @@ export default {
       </div>
       <section class="gray-gradient">
         <div class="contact-card">
-          <i class="fa-light fa-location-dot"></i>
+          <i class="fa-solid fa-location-dot"></i>
           <h1>ADDRESS:</h1>
           <p>123 Ave, Lorem City, site Country, The World</p>
         </div>
         <div class="contact-card">
-          <i class="fa-light fa-location-dot"></i>
+          <i class="fa-solid fa-mobile-screen-button"></i>
           <h1>PHONE:</h1>
           <p>(001) 123456789 - 234567891</p>
           <p>info@phloxbusiness.com</p>
         </div>
         <div class="contact-card">
-          <i class="fa-light fa-location-dot"></i>
+          <i class="far fa-clock"></i>
           <h1>WORK HOURS:</h1>
           <p>Monday - Friday 09.00 - 23.00</p>
           <p>Sunday 09.00 - 16.00</p>
@@ -66,9 +69,10 @@ export default {
 main {
   .title-container {
     text-align: center;
-    background: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
+    background: linear-gradient(to bottom, #f5f5f5, $white);
     color: $green;
     padding: 3rem;
+
     h1 {
       font-size: 40px;
       font-weight: 700;
@@ -77,6 +81,7 @@ main {
 
   .map-container {
     max-width: 100%;
+
     iframe {
       width: 100%;
       height: 500px;
@@ -95,13 +100,16 @@ main {
     margin: 0 auto 1rem auto;
     padding: 2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
     h1 {
       color: $text-dark-gray;
       margin: 2rem;
     }
+
     p {
       color: #565656;
     }
+
     i {
       color: $green;
     }

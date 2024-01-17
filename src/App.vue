@@ -1,29 +1,20 @@
-<script >
-
-import AppHeader from './components/AppHeader.vue';
-import AppFooter from './components/AppFooter.vue';
-import { store } from './store';
-import '@fortawesome/fontawesome-free/css/all.css';
-
-
-
+<script>
+import AppHeader from "./components/AppHeader.vue";
+import AppFooter from "./components/AppFooter.vue";
+import { store } from "./store";
 
 export default {
   components: {
     AppHeader,
     AppFooter,
-
   },
   data() {
     return {
       store,
-    }
+    };
   },
-  created() {
-
-  }
-}
-
+  created() { },
+};
 </script>
 
 <template>
@@ -33,7 +24,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use './styles/general.scss';
+@use "./styles/general.scss";
 // @use './styles/partials/mixins' as *;
 // @use './styles/partials/variables' as *;
 </style>

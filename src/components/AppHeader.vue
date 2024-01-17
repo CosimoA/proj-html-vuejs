@@ -18,8 +18,10 @@ export default {
       this.menuOpen = !this.menuOpen;
     },
     setActiveLink(link) {
+      if (this.menuOpen) {
+        this.toggleMenu();
+      }
       this.currentPage = link;
-      this.toggleMenu();
       this.resetLinkColors();
     },
     resetLinkColors() {
@@ -30,6 +32,24 @@ export default {
         }
       });
     },
+    updateNavVisibility() {
+      if (window.innerWidth >= 767) {
+        // Imposta menuOpen a true quando la media query è attiva
+        this.menuOpen = true;
+      } else {
+        this.menuOpen = false;
+      }
+    },
+  },
+  mounted() {
+    // Aggiungi un listener per rilevare i cambiamenti nella larghezza dello schermo
+    window.addEventListener('resize', this.updateNavVisibility);
+    // Chiama il metodo all'avvio del componente
+    this.updateNavVisibility();
+  },
+  destroyed() {
+    // Rimuovi il listener quando il componente viene distrutto per evitare memory leaks
+    window.removeEventListener('resize', this.updateNavVisibility);
   },
 }
 
@@ -46,7 +66,7 @@ export default {
       </div>
 
       <!-- NAVBAR -->
-      <div class="nav-container">
+      <div class="nav-container" v-show="menuOpen">
         <nav class="fullscreen-menu" :class="{ 'visible': menuOpen }">
           <div class="close-button" @click="toggleMenu">
             <div class="circle">
@@ -54,7 +74,7 @@ export default {
             </div>
           </div>
           <ul>
-            <li v-for="link in navLinksList" :key="link">
+            <li v-for=" link  in  navLinksList " :key="link">
               <router-link :to="link.toLowerCase() === 'home' ? '/' : link.toLowerCase()" class="menu-link"
                 :class="{ 'active': link === currentPage }" @click="setActiveLink(link)">
                 {{ link }}
@@ -191,6 +211,10 @@ header {
   }
 }
 
+.invisible {
+  display: none;
+}
+
 .fullscreen-menu.visible {
   opacity: 1;
   transform: scale(1);
@@ -209,7 +233,7 @@ header {
 
         .purchase-button {
           display: none;
-          // background-color: pink;
+          background-color: pink;
         }
       }
 
@@ -262,6 +286,64 @@ header {
 
 
 @media all and (min-width: 1025px) {
-  // altro
+  header {
+    section {
+      justify-content: space-between;
+
+      .button-container {
+        display: block;
+        width: 249px;
+        height: 54px;
+
+        .purchase-button {
+          display: none;
+          background-color: pink;
+        }
+      }
+
+
+    }
+
+    .hamburger-icon {
+      display: none;
+    }
+
+    .fullscreen-menu {
+      display: block;
+      position: static;
+      height: 54px;
+      background-color: transparent;
+      opacity: 1;
+      transform: scale(1);
+
+      .close-button {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .menu-link {
+        font-size: 19px;
+        font-weight: normal;
+        margin: 0 10px;
+
+        &:hover {
+          font-weight: bolder;
+        }
+      }
+
+      .menu-link.active {
+        color: black;
+      }
+    }
+  }
 }
 </style>
