@@ -21,18 +21,18 @@ export default {
       </div>
       <section class="gray-gradient">
         <div class="contact-card">
-          <i class="fa-light fa-location-dot"></i>
+          <i class="fa-solid fa-location-dot"></i>
           <h1>ADDRESS:</h1>
           <p>123 Ave, Lorem City, site Country, The World</p>
         </div>
         <div class="contact-card">
-          <i class="fa-light fa-location-dot"></i>
+          <i class="fa-solid fa-mobile-screen-button"></i>
           <h1>PHONE:</h1>
           <p>(001) 123456789 - 234567891</p>
           <p>info@phloxbusiness.com</p>
         </div>
         <div class="contact-card">
-          <i class="fa-light fa-location-dot"></i>
+          <i class="far fa-clock"></i>
           <h1>WORK HOURS:</h1>
           <p>Monday - Friday 09.00 - 23.00</p>
           <p>Sunday 09.00 - 16.00</p>
@@ -66,7 +66,7 @@ export default {
 main {
   .title-container {
     text-align: center;
-    background: linear-gradient(to bottom, #e4e4e4, #f9f9f9);
+    background: linear-gradient(to bottom, #f5f5f5, $white);
     color: $green;
     padding: 3rem;
     h1 {
