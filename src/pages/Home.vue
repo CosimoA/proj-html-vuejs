@@ -263,10 +263,12 @@ export default {
                 </div>
             </div> <!--end projects-->
         </section>
-        <section style="background-color: #f4f4f4; margin-top: 4em; height: 750px">
+        <section style="background-color: #f4f4f4; margin-top: 4em; height: 1280px">
             <div class="user_container">
                 <div class="numbers">
+                    <div class="colored">
 
+                    </div>
                 </div>
                 <div class="text_love p-5">
                     <p style=" font-size: 3em;"> We <span>Love</span> What We Do</p>
