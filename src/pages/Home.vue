@@ -177,14 +177,91 @@ export default {
                     </div>
                 </div> <!--end miss text-->
                 <div class="misscard_container">
-                    <div class="box">
+                    <div class="box_card">
                         <img src="/busy-architect-PYVKWM4-1024x872.jpg" alt="">
                     </div>
-                    <div class="box overlay">
+                    <div class="box_card overlay">
                         <img src="/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
                     </div>
                 </div> <!--end miss card container-->
             </div> <!--end mission-->
+        </section>
+        <section>
+            <div class="projects">
+                <div class="projects_text">
+                    <img src="/divider.svg" alt="">
+                    <p style=" font-size: 2em; font-weight: 700; margin-top: 1.2em  ; margin-bottom: 1.2em;">
+                        Our recent <span>web designs</span> & some examples of past <span>projects</span>
+                    </p>
+                    <img src="/divider.svg" alt="">
+                    <p style="margin-top: 1.5em;">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                        the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean. Separated they live in Bookmarksgrove.
+                    </p>
+                </div> <!--end projects text-->
+                <div class="project_container ">
+                    <div class="row mt-3 row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="/ina-soulis-227104-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="/sunisa-misa-531163-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="/355H-1024x1024.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/photo-1448932252197-d19750584e56-1024x1024.jpg" class="card-img-top"
+                                        alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/business-competition-PB366D8-1024x1024.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" class="card-img-top"
+                                        alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/aa9a4539-PQGJ7HU-1024x1024.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/cody-davis-253928-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--row-->
+                </div> <!--end project container-->
+                <div class="d-flex justify-content-center">
+                    <div class="button_view mt-5 mb-5">
+                        <a href="#"> READ MORE</a>
+                    </div>
+                </div>
+            </div> <!--end projects-->
         </section>
     </main>
 </template> 
@@ -302,7 +379,9 @@ li a:hover {
 }
 
 .button_view:hover {
-    background-color: black;
+    transition: all 0.5s ease;
+    transition: 2s;
+    background-color: #323232;
 }
 
 
@@ -318,7 +397,7 @@ li a:hover {
     position: relative;
 }
 
-.box {
+.box_card {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -333,9 +412,10 @@ li a:hover {
 }
 
 
-.box img {
+.box_card img {
     width: 80%;
     border-radius: 20px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 // // MEDIA QUERY
