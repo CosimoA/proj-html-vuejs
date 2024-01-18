@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
 }
 
 main {
   padding-top: 97px;
+  width: 100%;
 }
 
 // MEDIA QUERY
@@ -14,15 +16,7 @@ main {
 // Mobile
 
 // Tablet
-@media all and (max-width: 767px) {
-  .container {
-    max-width: 767px;
-  }
-}
+@media all and (max-width: 767px) {}
 
 // Desktop
-@media all and (max-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
+@media all and (max-width: 1024px) {}

@@ -136,6 +136,10 @@ i {
   font-size: 25px;
 }
 
+.logo img {
+  width: 200px;
+}
+
 // BUTTON PERSONALISATION
 .purchase-button {
   display: block;
