@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-  <header>
-    <div class="container">
+  <footer>
+    <div class="footer-container">
       <div class="top-footer">
         <div class="row">
           <div class="col">
@@ -80,7 +80,7 @@ export default {
         </ul>
       </div>
     </div>
-  </header>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
