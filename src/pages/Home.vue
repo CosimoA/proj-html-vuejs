@@ -536,7 +536,7 @@ export default {
                             <div class="card mb-5">
                                 <img src="/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg"
                                     class="card-img-top" alt="...">
-                                <div class="card_text p-4">
+                                <div class="card_alex p-4">
                                     <p style="color: #aaaaaa; margin: 0; font-size: 0.8em"> May 24, 2018 by Alex </p>
                                     <h5><span style="font-size: 1.1em;">&#8226;</span> Marketing Ideas</h5>
                                 </div>
@@ -546,7 +546,7 @@ export default {
                             <div class="card mb-5">
                                 <img src="/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg" class="card-img-top"
                                     alt="...">
-                                <div class="card_text p-4">
+                                <div class="card_alex p-4">
                                     <p style="color: #aaaaaa; margin: 0; font-size: 0.8em"> May 24, 2018 by Alex </p>
                                     <h5><span style="font-size: 1.1em;">&#8226;</span> Rest During Working Hours </h5>
                                 </div>
@@ -556,7 +556,7 @@ export default {
                             <div class="card mb-5">
                                 <img src="/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg" class="card-img-top"
                                     alt="...">
-                                <div class="card_text p-4">
+                                <div class="card_alex p-4">
                                     <p style="color: #aaaaaa; margin: 0; font-size: 0.8em"> May 24, 2018 by Alex </p>
                                     <h5><span style="font-size: 1.1em;">&#8226;</span> Develop Your Startup Idea </h5>
                                 </div>
