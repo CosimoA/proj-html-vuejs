@@ -110,7 +110,7 @@ export default {
                     <div style="text-align: center; ">
                         <img src="/divider.svg" alt="">
                     </div>
-                    <div class="button_view mt-4 mb-5">
+                    <div class="button_view purchase-button mt-4 mb-5">
                         <a href="#"> VIEW ALL</a>
                     </div>
                 </div> <!--end feat text-->
@@ -161,154 +161,400 @@ export default {
                 </div> <!--end featcard_container-->
             </div> <!--end features-->
         </section>
+        <section style="background-color: #fafafa; margin-top: 4em; height: 1080px">
+            <div class="mission">
+                <div class="miss_text p-2">
+                    <p style=" font-size: 3em;">Learn more about our <span>missions</span></p>
+                    <img src="/divider.svg" alt="">
+                    <p style="margin-top: 1.5em;"> Far far away, behind the word mountains, far from the countries Vokalia
+                        and
+                        Consonantia, there live
+                        the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean. Separated they live in Bookmarksgrove.
+                    </p>
+                    <div class="button_view purchase-button mt-5 mb-5">
+                        <a href="#"> READ MORE</a>
+                    </div>
+                </div> <!--end miss text-->
+                <div class="misscard_container">
+                    <div class="box_card box_man">
+                        <div class="colored" style="height: 400px;"></div>
+                    </div>
+                    <div class="box_woman box_card overlay">
+                        <img src="/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
+                    </div>
+                </div> <!--end miss card container-->
+            </div> <!--end mission-->
+        </section>
+        <section>
+            <div class="projects">
+                <div class="projects_text">
+                    <img src="/divider.svg" alt="">
+                    <p style=" font-size: 2em; font-weight: 700; margin-top: 1.2em  ; margin-bottom: 1.2em;">
+                        Our recent <span>web designs</span> & some examples of past <span>projects</span>
+                    </p>
+                    <img src="/divider.svg" alt="">
+                    <p style="margin-top: 1.5em;">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                        the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean. Separated they live in Bookmarksgrove.
+                    </p>
+                </div> <!--end projects text-->
+                <div class="project_container ">
+                    <div class="row mt-3 row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="/ina-soulis-227104-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="/sunisa-misa-531163-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="/355H-1024x1024.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/photo-1448932252197-d19750584e56-1024x1024.jpg" class="card-img-top"
+                                        alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/business-competition-PB366D8-1024x1024.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" class="card-img-top"
+                                        alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/aa9a4539-PQGJ7HU-1024x1024.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="/cody-davis-253928-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--row-->
+                </div> <!--end project container-->
+                <div class="d-flex justify-content-center">
+                    <div class="button_view purchase-button mt-5 mb-5">
+                        <a href="#"> READ MORE</a>
+                    </div>
+                </div>
+            </div> <!--end projects-->
+        </section>
+        <section style="background-color: #f4f4f4; margin-top: 4em; height: 1400px">
+            <div class="user_container">
+                <div class="numbers">
+                    <div class="colored d-flex flex-column align-items-center">
+                        <div class="colored_text mt-5">
+                            <div>
+                                <p>280</p>
+                                <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">PROJECTS</h4>
+                                <p style="font-size: 2.5em;">+3,500</p>
+                                <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">USERS' COMMENTS</h4>
+                                <div class="vl d-none d-md-block "></div>
+                                <p style="font-size: 2.5em; margin-left: 0.5em;">100%</p>
+                                <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">HAPPY CLIENTS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" text_love p-5">
+                    <p style=" font-size: 3em;"> We <span>Love</span> What We Do</p>
+                    <img src="/divider.svg" alt="">
+                    <p style="margin-top: 1.5em;">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                        there live
+                        the blind texts. Separated they lived in Bookmarksgrove right at the coast of the
+                        Semantics, a large
+                        language ocean. Separated they live in Bookmarksgrove.
+                    </p>
+                    <div class="checked">
+                        <i class="fa-solid fa-check me-2" style="color: #1cd595;">
+                        </i>
+                        <span style="color: #000000; font-weight: lighter;">far far away, behind mountains
+                        </span>
+                    </div>
+                    <div class="checked">
+                        <i class="fa-solid fa-check me-2" style="color: #1cd595;">
+                        </i>
+                        <span style="color: #000000; font-weight: lighter;">large language ocean
+                        </span>
+                    </div>
+                    <div class="checked">
+                        <i class="fa-solid fa-check me-2" style="color: #1cd595;">
+                        </i>
+                        <span style="color: #000000; font-weight: lighter;">far from the countries
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background-color: #f9f9f9;margin-bottom: 30px;">
+            <div class=" plan">
+                <div class="text_plan d-flex flex-column justify-content-between">
+                    <p id="elegant"> With <span>Live Chat 24/7</span> Support
+                    </p>
+                    <div style="text-align: center; ">
+                        <img src="/divider.svg" alt="">
+                    </div>
+                    <p style="margin-top: 1.5em;">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,there live
+                        the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.
+                    </p>
+                </div>
+                <div class="plan_container mt-4">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card" style="border-radius: 20px; ">
+                                <div class="card-header p-0" style="background-color: #2d2d2d;">
+                                    <div class=" designing mt-3">
+                                        <p
+                                            style="text-align: center; font-size: 1.8em; font-weight: 700; margin-bottom: 0;">
+                                            DESIGNING
+                                        </p>
+                                        <h6 style="text-align: center; font-size: 0.9em ">
+                                            All Designs
+                                        </h6>
+                                    </div>
+                                    <div class="price" style="color: #ffffff;">
+                                        <p style="text-align: center; font-size: 3em; margin:0 auto;">
+                                            <span style="color: #ffffff; font-size: 0.7em;">$</span>
+                                            10
+                                            <span style="color: #ffffff; font-size: 0.5em;">
+                                                / DESIGN
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center mt-4">
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Creative Design
+                                            Enabled
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Vibrant Color Usage
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Eye Catching Design
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Extreme Typography
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Exceptional Design
+                                        </span>
+                                    </div>
+                                </div> <!--end card body-->
+                            </div> <!--card-->
+                        </div> <!--end col-->
+                        <div class="col">
+                            <div class="card" style="border-radius: 20px;">
+                                <div class="card-header p-0"
+                                    style="background-image: linear-gradient(to right, #8ddc63, #1cd595);">
+                                    <div class=" designing mt-3">
+                                        <p
+                                            style="text-align: center; font-size: 1.8em; font-weight: 700; margin-bottom: 0;">
+                                            DEVELOPMENT
+                                        </p>
+                                        <h6 style="text-align: center; font-size: 0.9em ">
+                                            WordPress Projects
+                                        </h6>
+                                    </div>
+                                    <div class="price" style="color: #ffffff;">
+                                        <p style="text-align: center; font-size: 3em; margin:0 auto;">
+                                            <span style="color: #ffffff; font-size: 0.7em;">$</span>
+                                            15
+                                            <span style="color: #ffffff; font-size: 0.5em;">
+                                                / DESIGN
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center mt-4">
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Creative Design
+                                            Enabled
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Vibrant Color Usage
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Eye Catching Design
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Extreme Typography
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Exceptional Design
+                                        </span>
+                                    </div>
+                                </div> <!--end card body-->
+                            </div> <!--card-->
+                        </div> <!--end col-->
+                        <div class="col">
+                            <div class="card" style="border-radius: 20px;">
+                                <div class="card-header p-0" style="background-color: #2d2d2d;">
+                                    <div class=" designing mt-3">
+                                        <p
+                                            style="text-align: center; font-size: 1.8em; font-weight: 700; margin-bottom: 0;">
+                                            SEO
+                                        </p>
+                                        <h6 style="text-align: center; font-size: 0.9em ">
+                                            Web Products
+                                        </h6>
+                                    </div>
+                                    <div class="price" style="color: #ffffff;">
+                                        <p style="text-align: center; font-size: 3em; margin:0 auto;">
+                                            <span style="color: #ffffff; font-size: 0.7em;">$</span>
+                                            10
+                                            <span style="color: #ffffff; font-size: 0.5em;">
+                                                / DESIGN
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center mt-4">
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Creative Design
+                                            Enabled
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Vibrant Color Usage
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Eye Catching Design
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Extreme Typography
+                                        </span>
+                                    </div>
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check me-2" style="color: #000000;">
+                                        </i>
+                                        <span style="color: #000000; font-weight: lighter;">Exceptional Design
+                                        </span>
+                                    </div>
+                                </div> <!--end card body-->
+                            </div> <!--card-->
+                        </div> <!--end col-->
+                    </div> <!--row-->
+                </div> <!--end plan container-->
+            </div> <!--end plan-->
+        </section>
+        <section class="jumbo p-0">
+            <div class="j_colored p-3">
+                <div class="jumbo_container pt-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="jumbo_text p-3" style="text-align: center;">
+                        <i class="fa-solid fa-quote-left mb-3" style="color: #63E6BE; font-size: 4.6em;"></i>
+                        <p style="font-size: 1.5em; color: #f4f4f4;">
+                            When it comes to barbequing, there are two main schools of thought for the techniques that you
+                            can use. Freshly scrambled eggs with applewood smoked bacon - are amazing!
+                        </p>
+                    </div> <!--jumbo text-->
+                    <div class="jumbo_user p-4 d-flex flex-column align-items-center">
+                        <div class="woman mb-4">
+                        </div>
+                        <p style="font-size: 1.7em; color: #00d9a6; margin-bottom: 0;">LISSA DURBIN</p>
+                        <h4 style="font-size: 1em; color: #f4f4f4;">Client</h4>
+                    </div> <!--jumbo user-->
+                </div> <!--end jumbo container-->
+            </div> <!--end j colored-->
+        </section> <!--end jumbo-->
     </main>
 </template> 
 
 <style lang="scss" scoped>
-@use '../styles/partials/mixins' as *;
+@use '../styles/home.scss';
 
-section {
-    padding-top: 6em;
-    padding-left: 5em;
-    padding-right: 5em;
-}
 
-#elegant {
-    font-size: 2.2em;
-    text-align: center;
-    font-weight: 600;
-}
-
-h2 {
-    color: #76db6a;
-    font-weight: normal;
-    font-size: 1.3em;
-    word-spacing: 0.3em;
-}
-
-h1 {
-    font-size: 2.9em;
+// BUTTON PERSONALISATION
+.purchase-button {
+    position: relative;
+    overflow: hidden;
+    border: none;
     font-weight: bold;
-}
-
-span {
-    color: #00d4a2;
-}
-
-.item {
-    @include flex (wrap_b)
-}
-
-.button_read {
-    background-color: #323232;
-    border-radius: 2em;
-    padding: 0.6em;
-    text-align: center;
-    width: 10em;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: all 0.3s ease;
-}
-
-.button_read:hover {
     cursor: pointer;
-    background-color: #00d9a6;
-    filter: brightness(110%);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #00d9a6;
-    transform: scale(0.9)
+    z-index: 1;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.9em;
-    box-shadow: 1em;
+.purchase-button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 0%;
+    background: -webkit-radial-gradient(circle, rgb(0, 0, 0) 0%, black 70%);
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, black 70%);
+    transition: width 0.3s ease-out;
+    border-radius: 10rem;
+    z-index: -1;
 }
 
-li a {
-    color: black;
-    font-weight: 450;
-    padding: 0.6em;
+.purchase-button:hover:before {
+    width: 100%;
+    height: 100%;
 }
-
-li a:hover {
-    color: #00d4a2;
-    cursor: grab;
-}
-
-.prev,
-.next {
-    width: 3em;
-    height: 3em;
-    margin: 10px 0;
-    border-radius: 50%;
-    background: #ccc;
-    // position: absolute;
-    cursor: pointer;
-}
-
-.prev:hover {
-    background-color: #00d4a2;
-}
-
-.next:hover {
-    background-color: #00d4a2;
-}
-
-.item_img {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.item_img img {
-    width: 90%;
-}
-
-.button_view {
-    border-radius: 2em;
-    padding: 0.6em;
-    text-align: center;
-    width: 10em;
-    background-image: linear-gradient(to right, #8ddc63, #1cd595);
-    box-shadow: 0px 5px 16px 6px rgba(171, 237, 222, );
-    transition: all 0.3s ease;
-}
-
-.button_view:hover {
-    background-color: black;
-}
-
-
-.featcard_container {
-    border-radius: 2em;
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #f9f9f9;
-    margin-top: 3em;
-}
-
-// // MEDIA QUERY
-
-// // Tablet
-// @media all and (min-width: 767px) {
-//     .container {
-//         max-width: 767px;
-//     }
-
-//     .item_img {
-//         flex-direction: row-reverse;
-//         justify-content: space-between;
-//         align-items: center;
-
-//     }
-
-// }
-
-// // Desktop
-// @media all and (max-width: 1024px) {
-//     .container {
-//         max-width: 1024px;
-//     }
-// }
 </style>
