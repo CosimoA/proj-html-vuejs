@@ -35,42 +35,38 @@ export default {
 </script>
 
 <template>
-  <main>
-    <div class="container">
-      <section>
-        <div class="card-container">
-          <div class="card-nb green">
-            <div class="card-top">
-              <small>What Are You Waiting for?</small>
-              <h1 class="bold">Let's Talk About Work</h1>
-            </div>
-            <div class="card-bot">
-              <button>START NOW</button>
-            </div>
-          </div>
-          <div class="card-nb">
-            <div class="card-top">
-              <small>Are You Ready?</small>
-              <h1 class="bold">Start a New Project</h1>
-            </div>
-            <div class="card-bot">
-              <div class="input-box">
-                <input type="text" placeholder="Enter Your Email Address" />
-                <input type="button" value="SUBMIT" class="bold" />
-              </div>
-            </div>
+  <section class="client-section">
+    <div class="card-container">
+      <div class="card-nb green">
+        <div class="card-top">
+          <small>What Are You Waiting for?</small>
+          <h1 class="bold">Let's Talk About Work</h1>
+        </div>
+        <div class="card-bot">
+          <button>START NOW</button>
+        </div>
+      </div>
+      <div class="card-nb">
+        <div class="card-top">
+          <small>Are You Ready?</small>
+          <h1 class="bold">Start a New Project</h1>
+        </div>
+        <div class="card-bot">
+          <div class="input-box">
+            <input type="text" placeholder="Enter Your Email Address" />
+            <input type="button" value="SUBMIT" class="bold" />
           </div>
         </div>
-        <div class="clients-container">
-          <ul>
-            <li v-for="client in icons">
-              <img :src="client.src" :alt="client.alt" />
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
     </div>
-  </main>
+    <div class="clients-container">
+      <ul>
+        <li v-for="client in icons">
+          <img :src="client.src" :alt="client.alt" />
+        </li>
+      </ul>
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -78,26 +74,28 @@ export default {
 @use "../styles/partials/mixins" as *;
 @use "../styles/partials/variables" as *;
 
-section {
+.client-section {
   position: relative;
+  width: 740px;
   margin-top: 25rem;
+  margin: 0 auto;
   .card-container {
+    // max-width: 100%;
     position: absolute;
-    z-index: 10;
+    z-index: 20;
     top: -55%;
-    left: 1.5rem;
+    width: 100%;
 
     .card-nb {
       text-align: center;
       background: linear-gradient(to top left, #191919, #4c4c4c);
       box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
-      @include flex(both);
-      flex-direction: column;
       padding: 5rem 0.5rem;
       color: $white;
       border-radius: 20px;
       font-weight: 500;
       margin-bottom: 2rem;
+      width: 100%;
 
       small {
         color: #aaaaaa;
@@ -109,8 +107,8 @@ section {
       }
 
       .input-box {
-        width: 100%;
-        margin-top: 3rem;
+        width: 20rem;
+        margin: 3rem auto 0 auto;
         border: 0;
         border-radius: 30px;
         background: linear-gradient(to right, #555555, #323232);
@@ -153,6 +151,7 @@ section {
     background-color: #f6f6f6;
     padding: 15rem 0 5rem 0;
     text-align: center;
+
     ul {
       list-style: none;
       li {
@@ -160,5 +159,8 @@ section {
       }
     }
   }
+}
+
+@media all and (min-width: 767px) and (max-width: 1024px) {
 }
 </style>

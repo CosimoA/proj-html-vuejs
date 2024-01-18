@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
-  overflow-x: hidden;
 }
 
 .h1,
@@ -24,6 +23,7 @@ h6 {
 main {
   padding-top: 97px;
   width: 100%;
+  overflow-x: hidden;
 }
 
 // MEDIA QUERY
@@ -31,7 +31,9 @@ main {
 // Mobile
 
 // Tablet
-@media all and (max-width: 767px) {}
+@media all and (max-width: 767px) {
+}
 
 // Desktop
-@media all and (max-width: 1024px) {}
+@media all and (max-width: 1024px) {
+}

@@ -11,7 +11,9 @@ export default {
         <div class="row">
           <div class="col">
             <div class="icon-container">
-              <a href="#"><img src="/group-logo.png" alt="logo gruppo" /></a>
+              <a href="#"
+                ><img id="logo" src="/group-logo.png" alt="logo gruppo"
+              /></a>
             </div>
             <div class="text-container">
               <p>
@@ -24,7 +26,7 @@ export default {
           </div>
           <div class="col">
             <div class="title-container">
-              <h2>QUICk LINKS</h2>
+              <h4>QUICk LINKS</h4>
               <img src="/divider.svg" alt="divider" class="divider" />
             </div>
             <div class="text-container">
@@ -40,7 +42,7 @@ export default {
           </div>
           <div class="col">
             <div class="title-container">
-              <h2>CONTACT</h2>
+              <h4>CONTACT</h4>
               <img src="/divider.svg" alt="divider" class="divider" />
             </div>
             <div class="text-container">
@@ -56,7 +58,7 @@ export default {
           </div>
           <div class="col">
             <div class="title-container">
-              <h2>LOCATION ON MAP</h2>
+              <h4>LOCATION ON MAP</h4>
               <img src="/divider.svg" alt="divider" class="divider" />
             </div>
             <div class="map-container">
@@ -97,12 +99,19 @@ export default {
     display: flex;
     flex-direction: column;
 
+    #logo {
+      width: auto;
+      margin-bottom: 1rem;
+    }
+
     .col {
       width: 100%;
       margin-bottom: 3rem;
 
-      h2 {
+      h4 {
         margin-bottom: 1.5rem;
+        font-weight: 700;
+        color: $text-dark-gray;
       }
 
       .divider {
@@ -114,6 +123,7 @@ export default {
         list-style-type: none;
 
         li {
+          margin-bottom: 0.4rem;
           a:hover {
             color: $green;
           }
@@ -124,6 +134,7 @@ export default {
 }
 
 .bot-footer {
+  @include flex(space_b);
   background: linear-gradient(to right, #444444, #191919);
   color: $text-light-gray;
   padding: 2.5rem;
@@ -143,11 +154,26 @@ export default {
 }
 
 img {
-  max-width: 100%;
+  object-fit: cover;
+  // width: 100%;
+  max-height: 15rem;
 }
 
 a {
   color: $text-dark-gray;
   text-decoration: none;
+}
+
+@media all and (min-width: 767px) and (max-width: 1024px) {
+  .top-footer {
+    .row {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3rem;
+      .col {
+        width: 60%;
+      }
+    }
+  }
 }
 </style>
