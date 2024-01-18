@@ -8,8 +8,8 @@ export default {
   <footer>
     <div class="footer-container">
       <div class="top-footer">
-        <div class="row">
-          <div class="col">
+        <div class="row-nb">
+          <div class="col-nb">
             <div class="icon-container">
               <a href="#"
                 ><img id="logo" src="/group-logo.png" alt="logo gruppo"
@@ -24,7 +24,7 @@ export default {
               </p>
             </div>
           </div>
-          <div class="col">
+          <div class="col-nb">
             <div class="title-container">
               <h4>QUICk LINKS</h4>
               <img src="/divider.svg" alt="divider" class="divider" />
@@ -40,7 +40,7 @@ export default {
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-nb">
             <div class="title-container">
               <h4>CONTACT</h4>
               <img src="/divider.svg" alt="divider" class="divider" />
@@ -56,7 +56,7 @@ export default {
               <p>+99 (0) 101 0000 888</p>
             </div>
           </div>
-          <div class="col">
+          <div class="col-nb">
             <div class="title-container">
               <h4>LOCATION ON MAP</h4>
               <img src="/divider.svg" alt="divider" class="divider" />
@@ -94,8 +94,10 @@ export default {
   padding: 5rem 2rem;
   color: $text-dark-gray;
   line-height: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
 
-  .row {
+  .row-nb {
     display: flex;
     flex-direction: column;
 
@@ -104,8 +106,7 @@ export default {
       margin-bottom: 1rem;
     }
 
-    .col {
-      width: 100%;
+    .col-nb {
       margin-bottom: 3rem;
 
       h4 {
@@ -155,7 +156,7 @@ export default {
 
 img {
   object-fit: cover;
-  // width: 100%;
+  width: 100%;
   max-height: 15rem;
 }
 
@@ -164,14 +165,30 @@ a {
   text-decoration: none;
 }
 
+//TABLET VERSION
 @media all and (min-width: 767px) and (max-width: 1024px) {
   .top-footer {
-    .row {
+    margin: 0 auto;
+
+    .row-nb {
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 3rem;
-      .col {
-        width: 60%;
+      gap: 2rem;
+      .col-nb {
+        width: calc(50% - 2rem);
+      }
+    }
+  }
+}
+
+//DESKTOP VERSION
+@media all and (min-width: 1025px) {
+  .top-footer {
+    .row-nb {
+      flex-direction: row;
+      gap: 2rem;
+      .col-nb {
+        width: 25%;
       }
     }
   }
