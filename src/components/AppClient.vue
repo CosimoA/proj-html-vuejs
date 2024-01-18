@@ -60,11 +60,13 @@ export default {
       </div>
     </div>
     <div class="clients-container">
-      <ul>
-        <li v-for="client in icons">
-          <img :src="client.src" :alt="client.alt" />
-        </li>
-      </ul>
+      <div class="wrapper">
+        <ul>
+          <li v-for="client in icons">
+            <img :src="client.src" :alt="client.alt" />
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
@@ -75,12 +77,10 @@ export default {
 @use "../styles/partials/variables" as *;
 
 .client-section {
+  margin-top: 40rem;
   position: relative;
-  width: 740px;
-  margin-top: 25rem;
-  margin: 0 auto;
+
   .card-container {
-    // max-width: 100%;
     position: absolute;
     z-index: 20;
     top: -55%;
@@ -151,7 +151,6 @@ export default {
     background-color: #f6f6f6;
     padding: 15rem 0 5rem 0;
     text-align: center;
-
     ul {
       list-style: none;
       li {
@@ -161,6 +160,49 @@ export default {
   }
 }
 
+//TABLET VERSION
 @media all and (min-width: 767px) and (max-width: 1024px) {
+  .client-section {
+    .card-container {
+      padding: 1rem;
+    }
+    .clients-container {
+      padding-top: 25rem;
+      ul {
+        @include flex(space_b);
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+          margin: 0rem 3rem;
+        }
+      }
+    }
+  }
+}
+
+//DESKTOP VERSION
+@media all and (min-width: 1025px) {
+  .client-section {
+    margin-top: 20rem;
+    .card-container {
+      @include flex(both);
+      align-items: center;
+      padding: 1rem;
+      top: -15rem;
+      gap: 2rem;
+      .card-nb {
+        max-width: 50rem;
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .clients-container {
+      ul {
+        @include flex(space_b);
+        align-items: center;
+      }
+    }
+  }
 }
 </style>

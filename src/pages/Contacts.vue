@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="top-container">
+  <div class="top-container" id="titolo">
     <div class="title-container">
       <h1>Contact Page</h1>
     </div>
@@ -19,28 +19,37 @@ export default {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div class="cards-container">
-        <div class="contact-card">
-          <i class="fa-solid fa-location-dot"></i>
-          <h1>ADDRESS:</h1>
-          <p>123 Ave, Lorem City, site Country, The World</p>
-        </div>
-        <div class="contact-card">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-          <h1>PHONE:</h1>
-          <p>(001) 123456789 - 234567891</p>
-          <p>info@phloxbusiness.com</p>
-        </div>
-        <div class="contact-card">
-          <i class="fa-regular fa-clock"></i>
-          <h1>WORK HOURS:</h1>
-          <p>Monday - Friday 09.00 - 23.00</p>
-          <p>Sunday 09.00 - 16.00</p>
+      <div class="wrapper">
+        <div class="cards-container">
+          <div class="contact-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="card-text">
+              <h4>ADDRESS:</h4>
+              <p>123 Ave, Lorem City, site Country, The World</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <div class="card-text">
+              <h4>PHONE:</h4>
+              <p>(001) 123456789 - 234567891 info@phloxbusiness.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fa-regular fa-clock"></i>
+            <div class="card-text">
+              <h4>WORK HOURS:</h4>
+              <p>
+                Monday - Friday 09.00 - 23.00 <br />
+                Sunday 09.00 - 16.00
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </div>
-  <div class="contacts-container">
+  <div class="wrapper">
     <section class="contact-section">
       <div class="get-in-touch">
         <h1>
@@ -73,7 +82,7 @@ export default {
             <label class="form-label">Please insert phone number</label>
             <input type="text" class="form-input" />
           </div>
-          <div class="input-box">
+          <div class="input-box message">
             <label class="form-label">Message</label>
             <input type="text" class="form-input" />
           </div>
@@ -82,6 +91,9 @@ export default {
       </div>
     </section>
   </div>
+  <div id="scroll-to-top">
+    <a href="#titolo"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -89,13 +101,35 @@ export default {
 @use "../styles/partials/mixins" as *;
 @use "../styles/partials/variables" as *;
 
+#scroll-to-top {
+  a {
+    position: fixed;
+    z-index: 99;
+    bottom: 5rem;
+    right: 5rem;
+    border-radius: 180px;
+    background-color: $white;
+    border: 1px solid $text-dark-gray;
+    color: #fff;
+    padding: 0.4rem 0.7rem;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $text-dark-gray;
+    }
+    &:hover i {
+      color: $white;
+    }
+
+    i {
+      color: $text-dark-gray;
+    }
+  }
+}
+
 .top-container {
   width: 100%;
   padding-top: 97px;
-  margin: 0 auto;
-}
-.contacts-container {
-  width: 740px;
   margin: 0 auto;
 }
 .title-container {
@@ -123,6 +157,7 @@ export default {
 
 .cards-container {
   margin-top: -100px;
+  padding: 0 1.5rem;
   .contact-card {
     @include flex(space_b);
     flex-direction: column;
@@ -135,13 +170,14 @@ export default {
     width: 95%;
     box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.2);
 
-    h1 {
+    h4 {
       color: $text-dark-gray;
-      margin: 2rem;
+      margin: 1rem;
     }
 
     p {
-      color: #565656;
+      color: $text-dark-gray;
+      font-size: 13px;
     }
 
     i {
@@ -175,28 +211,33 @@ export default {
 
     h1 {
       font-weight: 700;
+      margin-bottom: 2rem;
     }
 
-    .custom-form .input-box {
-      position: relative;
-      width: 100%;
-      height: 3rem;
-      border-bottom: 2px solid #444444;
-      margin-bottom: 3rem;
+    .custom-form {
+      text-align: right;
 
-      .form-label {
-        position: absolute;
-        top: 10px;
-        left: 5px;
-        font-size: 0.7rem;
-      }
-      .form-input {
+      .input-box {
+        position: relative;
         width: 100%;
-        height: 100%;
-        background: transparent;
-        border: 0;
-        color: $text-dark-gray;
-        outline: none;
+        height: 3rem;
+        border-bottom: 2px solid #444444;
+        margin-bottom: 5rem;
+
+        .form-label {
+          position: absolute;
+          top: 10px;
+          left: 5px;
+          font-size: 0.7rem;
+        }
+        .form-input {
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          border: 0;
+          color: $text-dark-gray;
+          outline: none;
+        }
       }
     }
   }
@@ -208,8 +249,82 @@ export default {
   border-radius: 30px;
   padding: 1rem 0;
   width: 10rem;
-  margin-left: calc(100% - 10rem);
   color: $white;
   font-weight: 500;
+}
+
+//TABLET VERSION
+@media all and (min-width: 767px) and (max-width: 1024px) {
+  .cards-container {
+    @include flex(horizontal);
+    gap: 1.5rem;
+    .contact-card {
+      width: calc(100% / 3);
+    }
+  }
+
+  .contact-section {
+    padding: 5rem;
+    .get-in-touch {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+//DESKTOP VERSION
+@media all and (min-width: 1025px) {
+  .cards-container {
+    @include flex(horizontal);
+    padding: 0 5rem;
+    gap: 1.5rem;
+    .contact-card {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 5rem 2rem;
+      text-align: start;
+      line-height: 1.5rem;
+      max-height: 15rem;
+      h4 {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .contact-section {
+    @include flex(horizontal);
+    justify-content: space-between;
+    gap: 5rem;
+    .get-in-touch {
+      width: 70%;
+      text-align: start;
+
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+    .form-container {
+      width: 100%;
+      padding: 6rem 2rem 0 1rem;
+      .custom-form {
+        @include flex(space_b);
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .input-box {
+          width: calc((100% / 3) - 2rem);
+          margin-bottom: 2rem;
+        }
+
+        .message {
+          width: 100%;
+        }
+        #submit-button {
+          margin-left: calc(100% - 10rem);
+        }
+      }
+    }
+  }
 }
 </style>

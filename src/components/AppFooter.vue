@@ -6,82 +6,88 @@ export default {
 
 <template>
   <footer>
-    <div class="footer-container">
-      <div class="top-footer">
-        <div class="row-nb">
-          <div class="col-nb">
-            <div class="icon-container">
-              <a href="#"
-                ><img id="logo" src="/group-logo.png" alt="logo gruppo"
-              /></a>
+    <section>
+      <div class="wrapper">
+        <div class="top-footer">
+          <div class="row-nb">
+            <div class="col-nb">
+              <div class="icon-container">
+                <a href="#"
+                  ><img id="logo" src="/group-logo.png" alt="logo gruppo"
+                /></a>
+              </div>
+              <div class="text-container">
+                <p>
+                  While the lovely valley teems with vapour around me, and the
+                  meridian sun strikes the upper surface of the impenetrable
+                  foliage of my trees.While the lovely valley teems with vapour
+                  around me.
+                </p>
+              </div>
             </div>
-            <div class="text-container">
-              <p>
-                While the lovely valley teems with vapour around me, and the
-                meridian sun strikes the upper surface of the impenetrable
-                foliage of my trees.While the lovely valley teems with vapour
-                around me.
-              </p>
+            <div class="col-nb">
+              <div class="title-container">
+                <h4>QUICk LINKS</h4>
+                <img src="/divider.svg" alt="divider" class="divider" />
+              </div>
+              <div class="text-container">
+                <ul>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Terms of use</a></li>
+                  <li><a href="#">Privacy Projects</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="col-nb">
-            <div class="title-container">
-              <h4>QUICk LINKS</h4>
-              <img src="/divider.svg" alt="divider" class="divider" />
+            <div class="col-nb">
+              <div class="title-container">
+                <h4>CONTACT</h4>
+                <img src="/divider.svg" alt="divider" class="divider" />
+              </div>
+              <div class="text-container">
+                <p>
+                  Patricia C. Amedee 4401 Waldeck Street <br />
+                  Grapevine Nashville, TX 76051
+                </p>
+                <br />
+                <p>info@yourdomain.com</p>
+                <br />
+                <p>+99 (0) 101 0000 888</p>
+              </div>
             </div>
-            <div class="text-container">
-              <ul>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Privacy Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-nb">
-            <div class="title-container">
-              <h4>CONTACT</h4>
-              <img src="/divider.svg" alt="divider" class="divider" />
-            </div>
-            <div class="text-container">
-              <p>
-                Patricia C. Amedee 4401 Waldeck Street <br />
-                Grapevine Nashville, TX 76051
-              </p>
-              <br />
-              <p>info@yourdomain.com</p>
-              <br />
-              <p>+99 (0) 101 0000 888</p>
-            </div>
-          </div>
-          <div class="col-nb">
-            <div class="title-container">
-              <h4>LOCATION ON MAP</h4>
-              <img src="/divider.svg" alt="divider" class="divider" />
-            </div>
-            <div class="map-container">
-              <img src="/map-footer.png" alt="google map" />
+            <div class="col-nb">
+              <div class="title-container">
+                <h4>LOCATION ON MAP</h4>
+                <img src="/divider.svg" alt="divider" class="divider" />
+              </div>
+              <div class="map-container">
+                <img src="/map-footer.png" alt="google map" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="bot-footer">
-        <small>© 2024 PHLOX BUSINESS THEME.</small>
-        <ul>
-          <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-          </li>
-        </ul>
+    </section>
+    <section class="black-gradient">
+      <div class="wrapper">
+        <div class="bot-footer">
+          <small>© 2024 PHLOX BUSINESS THEME.</small>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   </footer>
 </template>
 
@@ -136,7 +142,7 @@ export default {
 
 .bot-footer {
   @include flex(space_b);
-  background: linear-gradient(to right, #444444, #191919);
+
   color: $text-light-gray;
   padding: 2.5rem;
   line-height: 2rem;
@@ -152,6 +158,10 @@ export default {
       }
     }
   }
+}
+
+.black-gradient {
+  background: linear-gradient(to right, #444444, #191919);
 }
 
 img {
