@@ -201,7 +201,7 @@ li a:hover {
     z-index: 2;
     background-color: #ffffff;
     width: 100%;
-    height: 550px;
+    min-height: 550px;
     top: 500px;
     border-radius: 20px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -211,6 +211,19 @@ li a:hover {
     background-color: #ffffff;
     height: 100px;
     width: 100%;
+}
+
+.jumbo {
+    background-image: url(/public/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.j_colored {
+    background-color: #323232;
+    filter: opacity(0.8);
+    height: 700px;
 }
 
 // // MEDIA QUERY

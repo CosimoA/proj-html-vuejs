@@ -273,7 +273,7 @@ export default {
                                 <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">PROJECTS</h4>
                                 <p style="font-size: 2.5em;">+3,500</p>
                                 <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">USERS' COMMENTS</h4>
-                                <div class="vl d-sm-none d-md-block "></div>
+                                <div class="vl d-none d-md-block "></div>
                                 <p style="font-size: 2.5em; margin-left: 0.5em;">100%</p>
                                 <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">HAPPY CLIENTS</h4>
                             </div>
@@ -311,7 +311,7 @@ export default {
                 </div>
             </div>
         </section>
-        <section style="background-color: #f9f9f9;">
+        <section style="background-color: #f9f9f9; height: 100em">
             <div class=" plan">
                 <div class="text_plan d-flex flex-column justify-content-between">
                     <p id="elegant"> With <span>Live Chat 24/7</span> Support
@@ -502,6 +502,9 @@ export default {
                 </div> <!--end plan container-->
             </div> <!--end plan-->
         </section>
+        <section class="jumbo p-0">
+            <div class="j_colored"></div>
+        </section> <!--end jumbo-->
     </main>
 </template> 
 
