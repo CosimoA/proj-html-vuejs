@@ -64,50 +64,53 @@ export default {
 
 <template>
   <header>
-    <section>
-      <!-- LOGO -->
-      <div class="logo">
-        <router-link to="/" ref="homeLink" class="menu-link" :class="{ active: currentPage === 'Home' }"
-          @click="handleLogoClick">
-          <img src="../assets/cropped-Group-39-2x.png" alt="Logo" />
-        </router-link>
-      </div>
-
-      <!-- NAVBAR -->
-      <div class="nav-container" v-show="menuOpen">
-        <nav class="fullscreen-menu" :class="{ visible: menuOpen }">
-          <div class="close-button" @click="toggleMenu">
-            <div class="circle">
-              <i class="fa-solid fa-times"></i>
-            </div>
-          </div>
-          <ul>
-            <li v-for="link in navLinksList" :key="link">
-              <router-link :to="link.toLowerCase() === 'home' ? '/' : link.toLowerCase()" class="menu-link"
-                :class="{ active: link === currentPage }" @click="setActiveLink(link)">
-                {{ link }}
-              </router-link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- PURCHASE BUTTON -->
-      <div class="button-container">
-        <div>
-          <button class="button">
-            <span>PURCHASE</span>
-          </button>
+    <div class="wrapper">
+      <section>
+        <!-- LOGO -->
+        <div class="logo">
+          <router-link to="/" ref="homeLink" class="menu-link" :class="{ active: currentPage === 'Home' }"
+            @click="handleLogoClick">
+            <img src="../assets/cropped-Group-39-2x.png" alt="Logo" />
+          </router-link>
         </div>
-      </div>
 
-      <!-- HAMBURGER ICON -->
-      <div class="hamburger-icon" @click="toggleMenu">
-        <span>
-          <i class="fa-solid fa-bars"></i>
-        </span>
-      </div>
-    </section>
+        <!-- NAVBAR -->
+        <div class="nav-container" v-show="menuOpen">
+          <nav class="fullscreen-menu" :class="{ visible: menuOpen }">
+            <div class="close-button" @click="toggleMenu">
+              <div class="circle">
+                <i class="fa-solid fa-times"></i>
+              </div>
+            </div>
+            <ul>
+              <li v-for="link in navLinksList" :key="link">
+                <router-link :to="link.toLowerCase() === 'home' ? '/' : link.toLowerCase()" class="menu-link"
+                  :class="{ active: link === currentPage }" @click="setActiveLink(link)">
+                  {{ link }}
+                </router-link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- PURCHASE BUTTON -->
+        <div class="button-container">
+          <div>
+            <button class="button">
+              <span>PURCHASE</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- HAMBURGER ICON -->
+        <div class="hamburger-icon" @click="toggleMenu">
+          <span>
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+      </section>
+    </div>
+
   </header>
 </template>
 
