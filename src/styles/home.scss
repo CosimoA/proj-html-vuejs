@@ -221,9 +221,19 @@ li a:hover {
 }
 
 .j_colored {
-    background-color: #323232;
-    filter: opacity(0.8);
+    background: rgba(67, 68, 67, 0.7);
     height: 700px;
+}
+
+.woman {
+    aspect-ratio: 1 / 1;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-image: url(/public/businesswoman-analysing-document-P8WSNMC-1024x820.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid #ffffff;
 }
 
 // // MEDIA QUERY
