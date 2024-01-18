@@ -198,50 +198,6 @@ main {
                     height: 100px;
                     width: 100%;
                 }
-
-                .button {
-                    display: block;
-                    padding: 18px 45px;
-                    border-radius: 100em;
-                    color: #fff;
-                    text-transform: uppercase;
-                    position: relative;
-                    overflow: hidden;
-                    background-image: linear-gradient(to right, #8ddc63, #1cd595);
-                    box-shadow: 6px 6px 25px 0 rgba(0, 217, 166, .35);
-                    text-shadow: 0 0 10px rgba(0, 0, 0, .04);
-                    border: none;
-                    width: 156px;
-                    height: 52px;
-                    font-size: 13px;
-                    font-weight: 500;
-                    line-height: 16px;
-                    white-space: nowrap;
-                    cursor: pointer;
-                    z-index: 1;
-                    align-self: center;
-
-
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 0%;
-                        height: 0%;
-                        background: -webkit-radial-gradient(circle, rgb(0, 0, 0) 0%, black 70%);
-                        background: radial-gradient(circle, rgb(0, 0, 0) 0%, black 70%);
-                        transition: width 0.3s ease-out;
-                        border-radius: 10rem;
-                        z-index: -1;
-                    }
-
-                    &:hover:before {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
             }
         }
 
