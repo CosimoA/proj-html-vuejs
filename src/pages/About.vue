@@ -1,7 +1,31 @@
 <script>
 export default {
-    name: "About"
-} 
+    name: "About",
+    data() {
+        return {
+            visionCards: [
+                {
+                    title: "Virtual Document",
+                    paragraph: "Far far away, behind the word mountains, far from the countries Vokalia...",
+                    iconClass: "fa-solid fa-database",
+                }, {
+                    title: "Flexible Payments",
+                    paragraph: "Far far away, behind the word mountains, far from the countries Vokalia...",
+                    iconClass: "fa-solid fa-money-bill-wave",
+                }, {
+                    title: "Virtual Document",
+                    paragraph: "Far far away, behind the word mountains, far from the countries Vokalia...",
+                    iconClass: "fa-solid fa-gauge-high",
+                }, {
+                    title: "Virtual Document",
+                    paragraph: "Far far away, behind the word mountains, far from the countries Vokalia...",
+                    iconClass: "fa-brands fa-sketch",
+                },
+
+            ],
+        };
+    },
+};
 </script> 
 
 <template>
@@ -11,6 +35,7 @@ export default {
             <section class="header-title">
                 <h1>About Page</h1>
             </section>
+
             <!-- JUMBOTRON -->
             <section class="about-jumbo">
                 <div class="wrapper">
@@ -63,6 +88,7 @@ export default {
                 </div>
 
             </section>
+
             <!-- VISIONS SECTIONS -->
             <section class="about-visions">
                 <div class="overlay-visions"></div>
@@ -85,19 +111,18 @@ export default {
                         <!-- CARDS -->
                         <div class="vision-cards">
                             <div class="vision-row">
-                                <div class="vision-card">
+                                <div v-for="(card, index) in visionCards" :key="index" class="vision-card">
                                     <div class="single-card">
                                         <div class="card-img">
                                             <div class="img-container">
-                                                <span class="ico"><i class="fa-solid fa-database"></i></span>
+                                                <span class="ico"><i :class="card.iconClass"></i></span>
                                             </div>
                                         </div>
 
                                         <div class="card-text">
-                                            <h4 class="card-title">Virtual Document</h4>
+                                            <h4 class="card-title">{{ card.title }}</h4>
                                             <div class="card-paragraph">
-                                                <p>Far far away, behind the word mountains, far from the countries
-                                                    Vokalia...</p>
+                                                <p>{{ card.paragraph }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -242,25 +267,28 @@ main {
         background-size: cover;
         margin-top: 150px;
         margin-bottom: 0;
-        padding: 142px 0 167px;
-        min-height: 500px;
+        // padding: 142px 0 167px;
 
-        .overlay-visions {
-            background-image: linear-gradient(24deg, #1cd595, #8ddc63);
-            opacity: .96;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            position: absolute;
-        }
+
+        // .overlay-visions {
+        //     background-image: linear-gradient(24deg, #1cd595, #8ddc63);
+        //     opacity: .96;
+        //     height: 100%;
+        //     width: 100%;
+        //     top: 0;
+        //     left: 0;
+        //     position: absolute;
+        // }
 
         .container-visions {
-            position: absolute;
+            // position: absolute;
             width: 100%;
-            height: 100%;
+            background: linear-gradient(24deg, #1cd595, #8ddc63);
+            opacity: .96;
+            padding: 142px 0 167px;
 
             .wrapper {
+
                 .vision-title {
                     margin-bottom: 20px;
 
