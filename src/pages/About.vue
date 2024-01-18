@@ -3,6 +3,16 @@ export default {
     name: "About",
     data() {
         return {
+            aboutData: {
+                title1: "We are a creative",
+                title2: "web",
+                title3: "design agency",
+                paragraph1: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.",
+                title4: "Our Visions",
+                title5: "Get to know",
+                title6: "our team",
+
+            },
             visionCards: [
                 {
                     title: "Virtual Document",
@@ -23,6 +33,39 @@ export default {
                 },
 
             ],
+            teamMembers: [
+                {
+                    name: "Anna Philandros",
+                    role: "Creative Director",
+                    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                    image: "url('/Mask-Group-142@2x-443x424.png')",
+                }, {
+                    name: "DEXTER MATTHEW",
+                    role: "Designer",
+                    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                }, {
+                    name: "RANDY SMITH",
+                    role: "Project Manager",
+                    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                }, {
+                    name: "ANGELO GARNER",
+                    role: "Co-founder",
+                    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                }, {
+                    name: "JIMMIE BENEDICT",
+                    role: "Frontend Developer",
+                    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                }, {
+                    name: "JANET GARNER",
+                    role: "Founder",
+                    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                },
+            ],
+            social: [
+                { iconClass: "fa-brands fa-facebook", url: "#" },
+                { iconClass: "fa-brands fa-twitter", url: "#" },
+                { iconClass: "fa-brands fa-pinterest", url: "#" },
+            ],
         };
     },
 };
@@ -33,7 +76,7 @@ export default {
         <div>
             <!-- HEADER SECTION -->
             <section class="header-title">
-                <h1>About Page</h1>
+                <h1 class="txt-color">About Page</h1>
             </section>
 
             <!-- JUMBOTRON -->
@@ -51,11 +94,12 @@ export default {
                         <!-- TITLE -->
                         <div class="title">
                             <div class="title-1">
-                                <h3><span>We are a creative</span></h3>
+                                <h3><span>{{ aboutData.title1 }}</span></h3>
                             </div>
                             <div class="title-2">
-                                <h3><span>web </span>
-                                    <span class="txt-color">design agency</span>
+                                <h3>
+                                    <span>{{ aboutData.title2 }} </span>
+                                    <span class="txt-color">{{ aboutData.title3 }}</span>
                                 </h3>
                             </div>
                         </div>
@@ -67,13 +111,7 @@ export default {
                         </div>
                         <!-- PARAGRAPH -->
                         <div class="container-paragraf">
-                            <p class="paragraf">
-                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there
-                                live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                                Semantics,
-                                a large language ocean.Separated they live in Bookmarksgrove.
-                            </p>
+                            <p class="paragraf"> {{ aboutData.paragraph1 }} </p>
                         </div>
 
                         <div class="container-button">
@@ -98,7 +136,7 @@ export default {
                     <div class="wrapper">
                         <!-- TITLE -->
                         <div class="vision-title">
-                            <h3 class="title">Our Visions</h3>
+                            <h3 class="title">{{ aboutData.title4 }}</h3>
                         </div>
                         <!-- DIVIDER -->
                         <div class="vision-divider">
@@ -126,20 +164,72 @@ export default {
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- OUR TEAM -->
+            <section class="our-team">
+                <div class="wrapper">
+
+                    <div class="container-our-team">
+
+                        <!-- TITLE -->
+                        <div class="title">
+                            <div class="title-1">
+                                <h3><span>{{ aboutData.title5 }}</span></h3>
+                            </div>
+                            <div class="title-2">
+                                <h3>
+                                    <span class="txt-color">{{ aboutData.title6 }}</span>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- DIVIDER -->
+                        <div class="container-bar">
+                            <div class="bar">
+                                <img src="/divider.svg" alt="divider">
+                            </div>
+                        </div>
+
+                        <!-- TEAM -->
+                        <div class="team-cards">
+                            <div class="team-row">
+                                <div v-for="(member, index) in teamMembers" :key="index" class="team-card"
+                                    :style="{ backgroundImage: member.image }">
+                                    <div class="single-card">
+                                        <!-- <img :src="(`../public/${member.image}`)" alt="Team Member"> -->
+                                        <div class="staff-content">
+                                            <h4 class="col-title"><a href="#">{{ member.name }}</a></h4>
+                                            <h5 class="col-subtitle">{{ member.role }}</h5>
+                                            <div class="entry-content">
+                                                {{ member.description }}
+                                            </div>
+                                            <div class="staff-footer">
+                                                <ul class="social-list">
+                                                    <li v-for="(socialItem, socialIndex) in social" :key="socialIndex">
+                                                        <a class="socia-icon" :href="socialItem.url">
+                                                            <span class="ico">
+                                                                <i :class="socialItem.iconClass"></i>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </div>
-
-
-
-
     </main>
 </template> 
 
@@ -161,7 +251,6 @@ main {
         h1 {
             font-size: 43px;
             font-weight: bold;
-            color: rgb(0, 217, 166);
         }
     }
 
@@ -261,27 +350,13 @@ main {
     }
 
     .about-visions {
-        position: relative;
         background-image: url(../assets/interior-PTCVAAC@2x.jpg);
         background-position: center;
         background-size: cover;
         margin-top: 150px;
         margin-bottom: 0;
-        // padding: 142px 0 167px;
-
-
-        // .overlay-visions {
-        //     background-image: linear-gradient(24deg, #1cd595, #8ddc63);
-        //     opacity: .96;
-        //     height: 100%;
-        //     width: 100%;
-        //     top: 0;
-        //     left: 0;
-        //     position: absolute;
-        // }
 
         .container-visions {
-            // position: absolute;
             width: 100%;
             background: linear-gradient(24deg, #1cd595, #8ddc63);
             opacity: .96;
@@ -373,6 +448,125 @@ main {
                 }
             }
 
+        }
+    }
+
+    .our-team {
+        .container-our-team {
+            .title {
+                text-align: center;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-size: 40px;
+                    line-height: 45px;
+                    font-weight: 600;
+                }
+
+                .title-1 {
+                    margin: 80px 0 0;
+
+                }
+
+                .title-2 {
+                    margin-top: 1em;
+
+                }
+
+            }
+
+            .container-bar {
+                display: flex;
+
+                .bar {
+                    margin: 0 auto;
+
+                    img {
+                        height: 5px;
+                    }
+                }
+            }
+
+            .team-row {
+                display: flex;
+                flex-wrap: wrap;
+
+                .team-card {
+                    margin: 1px solid black;
+                    width: 80vw;
+                    height: 80vw;
+                    max-width: 474px;
+                    max-height: 474px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // background-image: url(../assets/Mask-Group-142@2x-443x424.png);
+                    background-size: cover;
+
+                    &:hover .single-card {
+                        transform: scale(1.027);
+                        opacity: .9;
+                    }
+
+                    .single-card {
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(24deg, #1cd595, #8ddc63);
+                        opacity: 0;
+                        padding: 142px 0 167px;
+                        transform: scale(0);
+                        border-radius: 15px;
+                        transition: transform 0.8s ease, opacity 0.5s ease;
+                        padding: 16% 12% 14%;
+                        transition: opacity 0.5s ease, transform 0.5s ease;
+
+                        .staff-content {
+                            color: white;
+
+                            .col-title {
+                                font-size: 29px;
+                                font-weight: 500;
+                                line-height: 36px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: inherit;
+                                }
+                            }
+
+                            .col-subtitle {
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 20px;
+                            }
+
+                            .entry-content {
+                                overflow: hidden;
+                                padding: 25px 0;
+                                border-bottom: 1px solid white;
+                                margin-bottom: 25px;
+                            }
+
+                            .social-list {
+
+                                list-style: none;
+                                display: flex;
+
+                                li {
+                                    margin-right: 25px;
+
+                                    i {
+                                        color: white;
+                                        font-size: 25px;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
         }
     }
 }

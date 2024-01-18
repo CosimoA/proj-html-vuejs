@@ -38,7 +38,7 @@ export default {
   <main>
     <div class="container">
       <section>
-        <div class="card-container">
+        <!-- <div class="card-container">
           <div class="card-nb green">
             <div class="card-top">
               <small>What Are You Waiting for?</small>
@@ -60,7 +60,7 @@ export default {
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="clients-container">
           <ul>
             <li v-for="client in icons">
