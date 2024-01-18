@@ -137,6 +137,7 @@ export default {
     .green {
       background: linear-gradient(to bottom left, #99e15e, $green);
       box-shadow: 6px 6px 20px rgba($green, 0.5);
+
       small {
         color: #f9f9f9;
       }
@@ -151,8 +152,10 @@ export default {
     background-color: #f6f6f6;
     padding: 15rem 0 5rem 0;
     text-align: center;
+
     ul {
       list-style: none;
+
       li {
         padding: 2rem;
       }

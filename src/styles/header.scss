@@ -1,6 +1,5 @@
 // HEADER STYLE
 header {
-    display: flex;
     min-height: 97px;
     width: 100%;
     position: fixed;
@@ -114,9 +113,8 @@ header {
                 width: 249px;
                 height: 54px;
 
-                .purchase-button {
+                .button {
                     display: none;
-                    // background-color: pink;
                 }
             }
         }
@@ -167,7 +165,7 @@ header {
                 width: 249px;
                 height: 54px;
 
-                .purchase-button {
+                .button {
                     display: block;
                 }
             }
