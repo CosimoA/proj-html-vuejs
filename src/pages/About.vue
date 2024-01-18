@@ -7,9 +7,11 @@ export default {
 <template>
     <main>
         <div>
+            <!-- HEADER SECTION -->
             <section class="header-title">
                 <h1>About Page</h1>
             </section>
+            <!-- JUMBOTRON -->
             <section class="about-jumbo">
 
                 <div class="container-img">
@@ -20,6 +22,7 @@ export default {
                 </div>
 
                 <div class="container-info">
+                    <!-- TITLE -->
                     <div class="title">
                         <div class="title-1">
                             <h3><span>We are a creative</span></h3>
@@ -30,13 +33,13 @@ export default {
                             </h3>
                         </div>
                     </div>
-
+                    <!-- DIVIDER -->
                     <div class="container-bar">
                         <div class="bar">
                             <img src="/divider.svg" alt="divider">
                         </div>
                     </div>
-
+                    <!-- PARAGRAPH -->
                     <div class="container-paragraf">
                         <p class="paragraf">
                             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
@@ -48,12 +51,37 @@ export default {
                     <div class="container-button">
                         <div>
                             <button class="button">
-                                <span>PURCHASE</span>
+                                <span>READ MORE</span>
                             </button>
                         </div>
                     </div>
 
                 </div>
+            </section>
+            <!-- VISIONS SECTIONS -->
+            <section class="about-visions">
+                <div class="overlay-visions"></div>
+                <div class="container-visions">
+                    <!-- TITLE -->
+                    <div class="vision-title">
+                        <h3 class="title">Our Visions</h3>
+                    </div>
+                    <!-- DIVIDER -->
+                    <div class="vision-divider">
+                        <div class="container-bar">
+                            <div class="bar">
+                                <img src="/divider-white.svg" alt="divider">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARDS -->
+                    <div class="vision-cards">
+                        <div class="overlay">
+
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
 
@@ -72,6 +100,8 @@ main {
     .txt-color {
         color: rgb(0, 217, 166);
     }
+
+
 
     .header-title {
         padding: 50px 35px;
@@ -183,8 +213,10 @@ main {
                     border: none;
                     width: 156px;
                     height: 52px;
-                    font-size: .75em;
-                    font-weight: bold;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    white-space: nowrap;
                     cursor: pointer;
                     z-index: 1;
                     align-self: center;
@@ -220,6 +252,62 @@ main {
                 background-color: rgb(249 249 249);
             }
         }
+    }
+
+    .about-visions {
+        position: relative;
+        background-image: url(../assets/interior-PTCVAAC@2x.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-top: 150px;
+        margin-bottom: 0;
+        padding: 142px 0 167px;
+        min-height: 1000px;
+
+        .overlay-visions {
+            background-image: linear-gradient(24deg, #1cd595, #8ddc63);
+            opacity: .96;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .vision-title {
+            margin-bottom: 20px;
+            position: absolute;
+            width: 100%;
+
+            .title {
+                font-size: 45px;
+                font-weight: 600;
+                line-height: 63px;
+                color: white;
+                text-align: center;
+            }
+        }
+
+        .vision-divider {
+            position: absolute;
+            width: 100%;
+            top: 220px;
+
+            .container-bar {
+                display: flex;
+
+                .bar {
+                    margin: 0 auto;
+
+                    img {
+                        height: 5px;
+                        fill: white;
+                    }
+                }
+            }
+        }
+
+
     }
 
 
