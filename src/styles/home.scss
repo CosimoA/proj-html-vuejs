@@ -201,7 +201,7 @@ li a:hover {
     z-index: 2;
     background-color: #ffffff;
     width: 100%;
-    height: 550px;
+    min-height: 550px;
     top: 500px;
     border-radius: 20px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -211,6 +211,29 @@ li a:hover {
     background-color: #ffffff;
     height: 100px;
     width: 100%;
+}
+
+.jumbo {
+    background-image: url(/public/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.j_colored {
+    background: rgba(67, 68, 67, 0.7);
+    height: 700px;
+}
+
+.woman {
+    aspect-ratio: 1 / 1;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-image: url(/public/businesswoman-analysing-document-P8WSNMC-1024x820.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid #ffffff;
 }
 
 // // MEDIA QUERY

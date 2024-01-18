@@ -263,7 +263,7 @@ export default {
                 </div>
             </div> <!--end projects-->
         </section>
-        <section style="background-color: #f4f4f4; margin-top: 4em; height: 1280px">
+        <section style="background-color: #f4f4f4; margin-top: 4em; height: 1400px">
             <div class="user_container">
                 <div class="numbers">
                     <div class="colored d-flex flex-column align-items-center">
@@ -273,7 +273,7 @@ export default {
                                 <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">PROJECTS</h4>
                                 <p style="font-size: 2.5em;">+3,500</p>
                                 <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">USERS' COMMENTS</h4>
-                                <div class="vl d-sm-none d-md-block "></div>
+                                <div class="vl d-none d-md-block "></div>
                                 <p style="font-size: 2.5em; margin-left: 0.5em;">100%</p>
                                 <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">HAPPY CLIENTS</h4>
                             </div>
@@ -311,7 +311,7 @@ export default {
                 </div>
             </div>
         </section>
-        <section style="background-color: #f9f9f9;">
+        <section style="background-color: #f9f9f9;margin-bottom: 30px;">
             <div class=" plan">
                 <div class="text_plan d-flex flex-column justify-content-between">
                     <p id="elegant"> With <span>Live Chat 24/7</span> Support
@@ -327,7 +327,7 @@ export default {
                 <div class="plan_container mt-4">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
-                            <div class="card" style="border-radius: 20px;">
+                            <div class="card" style="border-radius: 20px; ">
                                 <div class="card-header p-0" style="background-color: #2d2d2d;">
                                     <div class=" designing mt-3">
                                         <p
@@ -502,6 +502,25 @@ export default {
                 </div> <!--end plan container-->
             </div> <!--end plan-->
         </section>
+        <section class="jumbo p-0">
+            <div class="j_colored p-3">
+                <div class="jumbo_container pt-5 d-flex flex-column justify-content-center align-items-center">
+                    <div class="jumbo_text p-3" style="text-align: center;">
+                        <i class="fa-solid fa-quote-left mb-3" style="color: #63E6BE; font-size: 4.6em;"></i>
+                        <p style="font-size: 1.5em; color: #f4f4f4;">
+                            When it comes to barbequing, there are two main schools of thought for the techniques that you
+                            can use. Freshly scrambled eggs with applewood smoked bacon - are amazing!
+                        </p>
+                    </div> <!--jumbo text-->
+                    <div class="jumbo_user p-4 d-flex flex-column align-items-center">
+                        <div class="woman mb-4">
+                        </div>
+                        <p style="font-size: 1.7em; color: #00d9a6; margin-bottom: 0;">LISSA DURBIN</p>
+                        <h4 style="font-size: 1em; color: #f4f4f4;">Client</h4>
+                    </div> <!--jumbo user-->
+                </div> <!--end jumbo container-->
+            </div> <!--end j colored-->
+        </section> <!--end jumbo-->
     </main>
 </template> 
 
