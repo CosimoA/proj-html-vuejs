@@ -236,6 +236,32 @@ li a:hover {
     border: 3px solid #ffffff;
 }
 
+.card {
+    position: relative;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card_text {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 100px;
+    width: 90%;
+    position: absolute;
+    top: 80%;
+    left: 25px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.posts {
+    background-color: #323232;
+    border-radius: 2em;
+    padding: 0.6em;
+    text-align: center;
+    width: 10em;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 // // MEDIA QUERY
 
 // // Tablet

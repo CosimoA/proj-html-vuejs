@@ -521,6 +521,57 @@ export default {
                 </div> <!--end jumbo container-->
             </div> <!--end j colored-->
         </section> <!--end jumbo-->
+        <section style="height: 720px;">
+            <div class="blog d-flex flex-column justify-content-between">
+                <div class="blog_text d-flex flex-column align-items-center">
+                    <p id="elegant">Latest News & Our<span> Blog</span>
+                    </p>
+                    <div style="text-align: center; ">
+                        <img src="/divider.svg" alt="">
+                    </div>
+                </div>
+                <div class="blog_container mt-4">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card mb-5">
+                                <img src="/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card_text p-4">
+                                    <p style="color: #aaaaaa; margin: 0; font-size: 0.8em"> May 24, 2018 by Alex </p>
+                                    <h5><span style="font-size: 1.1em;">&#8226;</span> Marketing Ideas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-5">
+                                <img src="/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card_text p-4">
+                                    <p style="color: #aaaaaa; margin: 0; font-size: 0.8em"> May 24, 2018 by Alex </p>
+                                    <h5><span style="font-size: 1.1em;">&#8226;</span> Rest During Working Hours </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-5">
+                                <img src="/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card_text p-4">
+                                    <p style="color: #aaaaaa; margin: 0; font-size: 0.8em"> May 24, 2018 by Alex </p>
+                                    <h5><span style="font-size: 1.1em;">&#8226;</span> Develop Your Startup Idea </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="purchase-button posts mt-5 mb-5">
+                        <a href="#"> VIEW ALL POSTS</a>
+                    </div>
+                </div>
+            </div> <!--blog-->
+        </section>
     </main>
 </template> 
 
@@ -548,6 +599,21 @@ export default {
     height: 0%;
     background: -webkit-radial-gradient(circle, rgb(0, 0, 0) 0%, black 70%);
     background: radial-gradient(circle, rgb(0, 0, 0) 0%, black 70%);
+    transition: width 0.3s ease-out;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.purchase-button.posts:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 0%;
+    background: -webkit-radial-gradient(circle, #8ddc63, #1cd595 70%);
+    background: radial-gradient(circle, #8ddc63, #1cd595 70%);
     transition: width 0.3s ease-out;
     border-radius: 10rem;
     z-index: -1;
