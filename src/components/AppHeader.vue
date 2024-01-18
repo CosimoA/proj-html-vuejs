@@ -132,9 +132,4 @@ i {
 .logo img {
   width: 200px;
 }
-
-.button-container {
-  margin-top: -20px;
-
-}
 </style>
