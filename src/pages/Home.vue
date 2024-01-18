@@ -110,7 +110,7 @@ export default {
                     <div style="text-align: center; ">
                         <img src="/divider.svg" alt="">
                     </div>
-                    <div class="button_view mt-4 mb-5">
+                    <div class="button_view purchase-button mt-4 mb-5">
                         <a href="#"> VIEW ALL</a>
                     </div>
                 </div> <!--end feat text-->
@@ -172,15 +172,15 @@ export default {
                         the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large
                         language ocean. Separated they live in Bookmarksgrove.
                     </p>
-                    <div class="button_view mt-5 mb-5">
+                    <div class="button_view purchase-button mt-5 mb-5">
                         <a href="#"> READ MORE</a>
                     </div>
                 </div> <!--end miss text-->
                 <div class="misscard_container">
-                    <div class="box_card">
-                        <img src="/busy-architect-PYVKWM4-1024x872.jpg" alt="">
+                    <div class="box_card box_man">
+                        <div class="colored" style="height: 400px;"></div>
                     </div>
-                    <div class="box_card overlay">
+                    <div class="box_woman box_card overlay">
                         <img src="/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
                     </div>
                 </div> <!--end miss card container-->
@@ -257,7 +257,7 @@ export default {
                     </div> <!--row-->
                 </div> <!--end project container-->
                 <div class="d-flex justify-content-center">
-                    <div class="button_view mt-5 mb-5">
+                    <div class="button_view purchase-button mt-5 mb-5">
                         <a href="#"> READ MORE</a>
                     </div>
                 </div>
@@ -266,16 +266,28 @@ export default {
         <section style="background-color: #f4f4f4; margin-top: 4em; height: 1280px">
             <div class="user_container">
                 <div class="numbers">
-                    <div class="colored">
-
+                    <div class="colored d-flex flex-column align-items-center">
+                        <div class="colored_text mt-5">
+                            <div>
+                                <p>280</p>
+                                <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">PROJECTS</h4>
+                                <p style="font-size: 2.5em;">+3,500</p>
+                                <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">USERS' COMMENTS</h4>
+                                <div class="vl d-sm-none d-md-block "></div>
+                                <p style="font-size: 2.5em; margin-left: 0.5em;">100%</p>
+                                <h4 style="text-align: center; color: #f4f4f4; font-size: 1em;">HAPPY CLIENTS</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="text_love p-5">
+                <div class=" text_love p-5">
                     <p style=" font-size: 3em;"> We <span>Love</span> What We Do</p>
                     <img src="/divider.svg" alt="">
                     <p style="margin-top: 1.5em;">
-                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                        the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                        there live
+                        the blind texts. Separated they lived in Bookmarksgrove right at the coast of the
+                        Semantics, a large
                         language ocean. Separated they live in Bookmarksgrove.
                     </p>
                     <div class="checked">
@@ -299,7 +311,7 @@ export default {
                 </div>
             </div>
         </section>
-        <section style="background-color: ##f9f9f9;">
+        <section style="background-color: #f9f9f9;">
             <div class=" plan">
                 <div class="text_plan d-flex flex-column justify-content-between">
                     <p id="elegant"> With <span>Live Chat 24/7</span> Support
@@ -495,4 +507,35 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/home.scss';
+
+
+// BUTTON PERSONALISATION
+.purchase-button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.purchase-button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 0%;
+    background: -webkit-radial-gradient(circle, rgb(0, 0, 0) 0%, black 70%);
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, black 70%);
+    transition: width 0.3s ease-out;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.purchase-button:hover:before {
+    width: 100%;
+    height: 100%;
+}
 </style>
