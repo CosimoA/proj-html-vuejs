@@ -162,6 +162,8 @@ img {
 
       li {
         padding: 2rem;
+        display: flex;
+        justify-content: center;
       }
     }
   }
@@ -218,4 +220,5 @@ img {
       }
     }
   }
-}</style>
+}
+</style>

@@ -399,12 +399,15 @@ main {
                     .vision-row {
                         display: flex;
                         flex-wrap: wrap;
+                        justify-content: center;
+
 
                         .vision-card {
                             padding: 75px 40px;
                             min-width: 256px;
-                            width: 100%;
+                            width: 90%;
                             border-radius: 15px;
+                            margin: 1em 0;
 
                             &:hover {
                                 background-color: rgba(0, 0, 0, 0.1);
@@ -577,6 +580,24 @@ main {
 @media all and (min-width: 767px) and (max-width: 1024px) {
     main {
 
+        .about-visions {
+
+            .container-visions {
+
+                .wrapper {
+
+                    .vision-cards {
+
+                        .vision-row {
+
+                            .vision-card {
+                                width: 45vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         .our-team {
             .container-our-team {
@@ -639,6 +660,26 @@ main {
 
 @media all and (min-width: 1025px) {
     main {
+
+        .about-visions {
+
+            .container-visions {
+
+                .wrapper {
+
+                    .vision-cards {
+
+                        .vision-row {
+
+                            .vision-card {
+                                width: 24vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .our-team {
             .container-our-team {
 
