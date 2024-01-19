@@ -5,17 +5,42 @@
   font-family: "Quicksand", sans-serif;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-y: hidden;
+}
+
 main {
   padding-top: 97px;
-  overflow-x: hidden;
+  // overflow: hidden;
+}
+
+// MEDIA QUERY
+
+// Mobile
+
+// Tablet
+@media all and (max-width: 767px) {
+}
+
+// Desktop
+@media all and (max-width: 1024px) {
 }
 
 .wrapper {
   max-width: 1600px;
   margin: 0 auto;
 }
-
-
 
 // <div>
 //   <button class="button">
@@ -32,8 +57,8 @@ main {
   position: relative;
   overflow: hidden;
   background-image: linear-gradient(to right, #8ddc63, #1cd595);
-  box-shadow: 6px 6px 25px 0 rgba(0, 217, 166, .35);
-  text-shadow: 0 0 10px rgba(0, 0, 0, .04);
+  box-shadow: 6px 6px 25px 0 rgba(0, 217, 166, 0.35);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
   border: none;
   width: 156px;
   height: 52px;
@@ -45,9 +70,8 @@ main {
   z-index: 1;
   align-self: center;
 
-
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
