@@ -123,9 +123,47 @@ li a:hover {
     margin-top: 3em;
 }
 
+.feat_card:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #8ddc63, #1cd595);
+    border-radius: 2em;
+}
+
+.card_text:hover {
+    color: #ffffff;
+}
 
 .misscard_container {
     position: relative;
+}
+
+.info-card {
+    padding: 110px 30px 100px 20px;
+    /* Aggiunto padding in basso e sui lati */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-image: linear-gradient(to right, #8ddc63, #1cd595);
+    height: 100%;
+}
+
+.col-title {
+    font-size: 2em;
+}
+
+.entry-content span {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.card-design {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover .info-card {
+        opacity: 0.9;
+    }
 }
 
 .box_card {
@@ -134,7 +172,6 @@ li a:hover {
     position: absolute;
     top: 0;
     left: 0;
-
 }
 
 .box_man {
@@ -250,6 +287,16 @@ li a:hover {
     top: 80%;
     left: 25px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.7s ease;
+}
+
+
+.card_alex:hover {
+    background-image: linear-gradient(to left, #8ddc63, #1cd595);
+    transition: 2s;
+    transform: scale(1.05);
+    border-radius: 15px;
+    color: #ffffff !important;
 }
 
 .posts {
@@ -260,6 +307,7 @@ li a:hover {
     width: 10em;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 
 // // MEDIA QUERY

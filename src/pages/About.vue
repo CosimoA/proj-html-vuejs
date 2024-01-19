@@ -38,27 +38,32 @@ export default {
                     name: "Anna Philandros",
                     role: "Creative Director",
                     description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
-                    image: "url('/Mask-Group-142@2x-443x424.png')",
+                    image: "url('/team1.png')",
                 }, {
                     name: "DEXTER MATTHEW",
                     role: "Designer",
                     description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                    image: "url('/team2.png')",
                 }, {
                     name: "RANDY SMITH",
                     role: "Project Manager",
                     description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                    image: "url('/team3.png')",
                 }, {
                     name: "ANGELO GARNER",
                     role: "Co-founder",
                     description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                    image: "url('/team4.png')",
                 }, {
                     name: "JIMMIE BENEDICT",
                     role: "Frontend Developer",
                     description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                    image: "url('/team5.png')",
                 }, {
                     name: "JANET GARNER",
                     role: "Founder",
                     description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics...",
+                    image: "url('/team6.png')",
                 },
             ],
             social: [
