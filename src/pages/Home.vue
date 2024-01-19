@@ -144,7 +144,7 @@ export default {
                 </div> <!--end slider-wrapper-->
             </div> <!--end container-->
         </section> <!--end section-->
-        <section>
+        <section style="padding: 6em 5em;">
             <div class="features d-flex flex-column justify-content-between">
                 <div class="feat_text d-flex flex-column align-items-center">
                     <p id="elegant"> We Are Here To Make Your <span>Website</span> Look More <span>Elegant</span> And
@@ -204,7 +204,7 @@ export default {
                 </div> <!--end featcard_container-->
             </div> <!--end features-->
         </section>
-        <section style="background-color: #fafafa; margin-top: 4em; height: 1080px">
+        <section style="background-color: #fafafa; margin-top: 4em; height: 1400px">
             <div class="mission">
                 <div class="miss_text p-2">
                     <p style=" font-size: 3em;">Learn more about our <span>missions</span></p>
@@ -247,7 +247,7 @@ export default {
                     <div class="row mt-3 row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
                         <div class="col" v-for="(design, index) in webDesigns" :key="index">
-                            <div class="card" :style="{ backgroundImage: design.image }">
+                            <div class="card card-design" :style="{ backgroundImage: design.image }">
                                 <div class="info-card">
                                     <h4 class="col-title"><a href="#">{{ design.title }}</a></h4>
                                     <div class="entry-content">
@@ -257,7 +257,6 @@ export default {
                                 </div>
                             </div>
                         </div>
-
 
                     </div> <!--row-->
                 </div> <!--end project container-->
@@ -526,7 +525,7 @@ export default {
                 </div> <!--end jumbo container-->
             </div> <!--end j colored-->
         </section> <!--end jumbo-->
-        <section style="height: 720px;">
+        <section style="margin-bottom: 500px;">
             <div class="blog d-flex flex-column justify-content-between">
                 <div class="blog_text d-flex flex-column align-items-center">
                     <p id="elegant">Latest News & Our<span> Blog</span>
