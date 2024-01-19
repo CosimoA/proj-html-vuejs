@@ -121,16 +121,29 @@ li a:hover {
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #f9f9f9;
     margin-top: 3em;
+
 }
 
 .feat_card:hover {
     cursor: pointer;
     background-image: linear-gradient(to right, #8ddc63, #1cd595);
+
+    transition: all 0.8s ease;
+    color: #ffffff;
+}
+
+.feat_card {
     border-radius: 2em;
 }
 
-.card_text:hover {
+.feat_card:hover .card_text i {
     color: #ffffff;
+    transition: all 0.8s ease;
+}
+
+.card_text i {
+    color: #63E6BE;
+    font-size: 4em;
 }
 
 .misscard_container {

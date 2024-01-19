@@ -161,7 +161,7 @@ export default {
                     <div class="feat_card p-4">
                         <div class="card_body ">
                             <div class="card_text px-3 pt-5">
-                                <i class="fa-solid fa-gauge-high fa-xl mb-5" style="color: #63E6BE; font-size: 4em;"></i>
+                                <i class="fa-solid fa-gauge-high fa-xl mb-5"></i>
                                 <p style="font-size: 2em;">Speed Optimization</p>
                                 <p> Far far away, behind the word mountains, far from the countries Vokalia Separated..</p>
                             </div> <!--end card_text-->
@@ -172,8 +172,7 @@ export default {
                     <div class="feat_card p-4">
                         <div class="card_body ">
                             <div class="card_text px-3 pt-5">
-                                <i class="fa-solid fa-tablet-screen-button fa-xl mb-5"
-                                    style="color: #63E6BE; font-size: 4em;"></i>
+                                <i class="fa-solid fa-tablet-screen-button fa-xl mb-5"></i>
                                 <p style="font-size: 2em;">Web Design</p>
                                 <p> Far far away, behind the word mountains, far from the countries Vokalia Separated..</p>
                             </div> <!--end card_text-->
@@ -184,7 +183,7 @@ export default {
                     <div class="feat_card p-4">
                         <div class="card_body ">
                             <div class="card_text px-3 pt-5">
-                                <i class="fa-solid fa-cloud fa-xl mb-5" style="color: #63E6BE; font-size: 4em;"></i>
+                                <i class="fa-solid fa-cloud fa-xl mb-5"></i>
                                 <p style="font-size: 2em;">Cloud Solutions</p>
                                 <p> Far far away, behind the word mountains, far from the countries Vokalia Separated..</p>
                             </div> <!--end card_text-->
@@ -195,7 +194,7 @@ export default {
                     <div class="feat_card p-4">
                         <div class="card_body ">
                             <div class="card_text px-3 pt-5">
-                                <i class="fa-solid fa-stopwatch fa-xl mb-5" style="color: #63E6BE; font-size: 4em;"></i>
+                                <i class="fa-solid fa-stopwatch fa-xl mb-5"></i>
                                 <p style="font-size: 2em;">Online Marketing</p>
                                 <p> Far far away, behind the word mountains, far from the countries Vokalia Separated..</p>
                             </div> <!--end card_text-->
@@ -315,7 +314,7 @@ export default {
                 </div>
             </div>
         </section>
-        <section style="background-color: #f9f9f9;margin-bottom: 30px;">
+        <section style="background-color: #f9f9f9;margin-bottom: 30px; padding: 6em 5em;">
             <div class=" plan">
                 <div class="text_plan d-flex flex-column justify-content-between">
                     <p id="elegant"> With <span>Live Chat 24/7</span> Support
