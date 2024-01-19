@@ -29,44 +29,44 @@ export default {
 
             webDesigns: [
                 {
-                    image: "url(' / flowers.jpg')",
+                    image: "url('/flowers.jpg')",
                     title: 'The Basket of Flowers',
-                    scope: [BRANDING, MARKETING],
+                    scope: ["BRANDING", "MARKETING"],
                 },
                 {
-                    image: "url(' / ruota.jpg')",
+                    image: "url('/ruota.jpg')",
                     title: 'A Famous Ferris Wheel',
-                    scope: [MARKETING],
+                    scope: ["MARKETING"],
                 },
                 {
-                    image: "url(' / scarpe.jpg')",
+                    image: "url('/scarpe.jpg')",
                     title: 'Complementary Colors',
-                    scope: [BRANDING, MARKETING],
+                    scope: ["BRANDING", "MARKETING"],
                 },
                 {
-                    image: "url(' / desk.jpg')",
+                    image: "url('/desk.jpg')",
                     title: 'Business Prestige',
-                    scope: [BRANDING],
+                    scope: ["BRANDING"],
                 },
                 {
-                    image: "url(' / origami.jpg')",
+                    image: "url('/origami.jpg')",
                     title: 'Colorful Origami Boats',
-                    scope: [BRANDING, MARKETING],
+                    scope: ["BRANDING", "MARKETING"],
                 },
                 {
-                    image: "url(' / sofa.jpg')",
+                    image: "url('/sofa.jpg')",
                     title: 'Modern Coach',
-                    scope: [MARKETING],
+                    scope: ["MARKETING"],
                 },
                 {
-                    image: "url(' / mongolfiere.jpg')",
+                    image: "url('/mongolfiere.jpg')",
                     title: 'Hot Air Ballons',
-                    scope: [BRANDING, MARKETING],
+                    scope: ["BRANDING", "MARKETING"],
                 },
                 {
-                    image: "url(' / arance.jpg')",
+                    image: "url('/arance.jpg')",
                     title: 'Make Difference',
-                    scope: [BRANDING],
+                    scope: ["BRANDING"],
                 },
             ],
         }
@@ -251,11 +251,13 @@ export default {
                                 <div class="info-card">
                                     <h4 class="col-title"><a href="#">{{ design.title }}</a></h4>
                                     <div class="entry-content">
-                                        <span>{{ design.scope }}</span>
+                                        <span v-for="(scope, scopeIndex) in design.scope" :key="scopeIndex">{{ scope
+                                        }}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
 
                     </div> <!--row-->
                 </div> <!--end project container-->
