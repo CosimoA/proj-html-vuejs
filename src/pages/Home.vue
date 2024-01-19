@@ -830,15 +830,6 @@ export default {
 }
 
 @media all and (min-width: 767px) and (max-width: 1024px) {
-  main {
-    section {
-      .section-container {
-        .slider-wrapper {
-        }
-      }
-    }
-  }
-
   .features {
     padding: 2rem 5rem;
     #elegant {
