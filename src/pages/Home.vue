@@ -26,6 +26,49 @@ export default {
                     text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.',
                 },
             ],
+
+            webDesigns: [
+                {
+                    image: "url(' / flowers.jpg')",
+                    title: 'The Basket of Flowers',
+                    scope: [BRANDING, MARKETING],
+                },
+                {
+                    image: "url(' / ruota.jpg')",
+                    title: 'A Famous Ferris Wheel',
+                    scope: [MARKETING],
+                },
+                {
+                    image: "url(' / scarpe.jpg')",
+                    title: 'Complementary Colors',
+                    scope: [BRANDING, MARKETING],
+                },
+                {
+                    image: "url(' / desk.jpg')",
+                    title: 'Business Prestige',
+                    scope: [BRANDING],
+                },
+                {
+                    image: "url(' / origami.jpg')",
+                    title: 'Colorful Origami Boats',
+                    scope: [BRANDING, MARKETING],
+                },
+                {
+                    image: "url(' / sofa.jpg')",
+                    title: 'Modern Coach',
+                    scope: [MARKETING],
+                },
+                {
+                    image: "url(' / mongolfiere.jpg')",
+                    title: 'Hot Air Ballons',
+                    scope: [BRANDING, MARKETING],
+                },
+                {
+                    image: "url(' / arance.jpg')",
+                    title: 'Make Difference',
+                    scope: [BRANDING],
+                },
+            ],
         }
     },
     // proprietà che mi permette di fa scorrere avanti o indietro (ciclo infinito) le immagini nel carosello al click delle frecce
@@ -202,47 +245,18 @@ export default {
                 </div> <!--end projects text-->
                 <div class="project_container ">
                     <div class="row mt-3 row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                        <div class="col">
-                            <div class="card">
-                                <img src="/ina-soulis-227104-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/sunisa-misa-531163-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/355H-1024x1024.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/photo-1448932252197-d19750584e56-1024x1024.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/business-competition-PB366D8-1024x1024.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/aa9a4539-PQGJ7HU-1024x1024.jpg" class="card-img-top" alt="...">
-                            </div>
 
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="/cody-davis-253928-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
+                        <div class="col" v-for="(design, index) in webDesigns" :key="index">
+                            <div class="card" :style="{ backgroundImage: design.image }">
+                                <div class="info-card">
+                                    <h4 class="col-title"><a href="#">{{ design.title }}</a></h4>
+                                    <div class="entry-content">
+                                        <span>{{ design.scope }}</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div> <!--row-->
                 </div> <!--end project container-->
                 <div class="d-flex justify-content-center">

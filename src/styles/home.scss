@@ -139,13 +139,7 @@ li a:hover {
 
 .card {
     transition: all 1.5s ease;
-}
-
-.card img:hover {
-    transition: 2s;
-    transform: scale(1.1);
-    border-radius: 15px;
-    background-color: linear-gradient(to right, #8ddc63, #1cd595) !important;
+    height: 100%;
 }
 
 .box_card {
