@@ -579,6 +579,100 @@ main {
 
 @media all and (min-width: 767px) and (max-width: 1024px) {
     main {
+        .about-jumbo {
+            margin-top: 85px;
+            padding: 10% 5%;
+            background-color: rgb(249 249 249);
+
+            .container-img {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    z-index: 1;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(249 249 249);
+                    z-index: 2;
+                    animation: slideIn 0.5s ease-out 0.3s forwards;
+
+
+                }
+            }
+
+            .container-info {
+                .title {
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    h3 {
+                        font-size: 33px;
+                        line-height: 45px;
+                        font-weight: 600;
+                    }
+
+                    .title-1 {
+                        margin: 80px 0 0;
+
+                    }
+
+                    .title-2 {
+                        margin-top: 1em;
+
+                    }
+
+                }
+
+                .container-bar {
+                    display: flex;
+
+                    .bar {
+                        margin: 0 auto;
+
+                        img {
+                            height: 5px;
+                        }
+                    }
+                }
+
+                .container-paragraf {
+                    margin: 42px 0 0;
+
+                    .paragraf {
+                        text-align: center;
+                        margin: 0 0 1em;
+                    }
+                }
+
+                .container-button {
+                    margin: 80px 0 0;
+                    padding: 10px;
+
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        height: 100px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            // ANIMATIONS
+            @keyframes slideIn {
+                to {
+                    left: 100%;
+                    background-color: rgb(249 249 249);
+                }
+            }
+        }
 
         .about-visions {
 
