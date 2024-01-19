@@ -204,7 +204,7 @@ export default {
                     <div class="row mt-3 row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                         <div class="col">
                             <div class="card">
-                                <img src="/ina-soulis-227104-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
+                                <!-- <img src="/ina-soulis-227104-unsplash-1024x1024.jpg" class="card-img-top" alt="..."> -->
                             </div>
                         </div>
                         <div class="col">
