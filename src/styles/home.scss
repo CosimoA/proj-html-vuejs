@@ -4,6 +4,8 @@ section {
     padding-top: 6em;
     padding-left: 5em;
     padding-right: 5em;
+    width: 100%;
+    overflow: hidden;
 }
 
 #elegant {
@@ -121,16 +123,29 @@ li a:hover {
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #f9f9f9;
     margin-top: 3em;
+
 }
 
 .feat_card:hover {
     cursor: pointer;
     background-image: linear-gradient(to right, #8ddc63, #1cd595);
+
+    transition: all 0.8s ease;
+    color: #ffffff;
+}
+
+.feat_card {
     border-radius: 2em;
 }
 
-.card_text:hover {
+.feat_card:hover .card_text i {
     color: #ffffff;
+    transition: all 0.8s ease;
+}
+
+.card_text i {
+    color: #63E6BE;
+    font-size: 4em;
 }
 
 .misscard_container {
@@ -167,11 +182,11 @@ li a:hover {
 }
 
 .box_card {
-    width: 100%;
+    width: 200%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100px;
 }
 
 .box_man {
@@ -189,7 +204,7 @@ li a:hover {
 
 .box_man,
 .box_woman img {
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -310,26 +325,54 @@ li a:hover {
 
 
 
-// // MEDIA QUERY
-
+// MEDIA QUERY 
 // // Tablet
-// @media all and (min-width: 767px) {
-//     .container {
-//         max-width: 767px;
-//     }
+@media all and (min-width: 767px) and (max-width: 1024px) {
+    .container {
+        max-width: 767px;
+    }
 
-//     .item_img {
-//         flex-direction: row-reverse;
-//         justify-content: space-between;
-//         align-items: center;
+    .item_img {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-//     }
+    .box_card {
+        width: 130%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-// }
+    .box_man {
+        background-image: url(/public/busy-architect-PYVKWM4-1024x872.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+}
 
-// // Desktop
-// @media all and (max-width: 1024px) {
-//     .container {
-//         max-width: 1024px;
-//     }
-// }
+// Desktop
+@media all and (min-width: 1025px) {
+    .container {
+        max-width: 1024px;
+    }
+
+
+    .box_card {
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .box_man {
+        background-image: url(/public/busy-architect-PYVKWM4-1024x872.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+}
