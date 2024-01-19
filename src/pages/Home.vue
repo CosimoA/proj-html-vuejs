@@ -203,7 +203,7 @@ export default {
                 </div> <!--end featcard_container-->
             </div> <!--end features-->
         </section>
-        <section style="background-color: #fafafa; margin-top: 4em; height: 1400px; padding: 6em 5em;">
+        <section style="background-color: #fafafa; margin-top: 4em; height: 1600px; padding: 6em 5em;">
             <div class="mission">
                 <div class="miss_text p-2">
                     <p style=" font-size: 3em;">Learn more about our <span>missions</span></p>
