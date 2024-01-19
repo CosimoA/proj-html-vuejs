@@ -182,7 +182,7 @@ li a:hover {
 }
 
 .box_card {
-    width: 100%;
+    width: 80%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -325,26 +325,33 @@ li a:hover {
 
 
 
-// // MEDIA QUERY
-
+// MEDIA QUERY 
 // // Tablet
-// @media all and (min-width: 767px) {
-//     .container {
-//         max-width: 767px;
-//     }
+@media all and (min-width: 767px) {
+    .container {
+        max-width: 767px;
+    }
 
-//     .item_img {
-//         flex-direction: row-reverse;
-//         justify-content: space-between;
-//         align-items: center;
+    .item_img {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-//     }
+    .box_man,
+    .box_woman img {
+        width: 40%;
+    }
+}
 
-// }
+// Desktop
+@media all and (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
 
-// // Desktop
-// @media all and (max-width: 1024px) {
-//     .container {
-//         max-width: 1024px;
-//     }
-// }
+    .box_man,
+    .box_woman img {
+        max-width: 60%;
+    }
+}
