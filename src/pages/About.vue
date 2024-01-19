@@ -497,16 +497,14 @@ main {
                 flex-wrap: wrap;
 
                 .team-card {
-                    margin: 1px solid black;
                     width: 80vw;
                     height: 80vw;
                     max-width: 474px;
                     max-height: 474px;
-                    margin: 0 auto;
+                    margin: 1em auto;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    // background-image: url(../assets/Mask-Group-142@2x-443x424.png);
                     background-size: cover;
 
                     &:hover .single-card {
@@ -568,6 +566,99 @@ main {
                                 }
                             }
 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 767px) and (max-width: 1024px) {
+    main {
+
+
+        .our-team {
+            .container-our-team {
+                .title {
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    h3 {
+                        font-size: 40px;
+                        line-height: 45px;
+                        font-weight: 600;
+                    }
+
+                    .title-1 {
+                        margin: 80px 0 0;
+
+                    }
+
+                    .title-2 {
+                        margin-top: 1em;
+
+                    }
+
+                }
+
+                .container-bar {
+                    display: flex;
+
+                    .bar {
+                        margin: 0 auto;
+
+                        img {
+                            height: 5px;
+                        }
+                    }
+                }
+
+                .team-row {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .team-card {
+                        width: 45vw;
+                        height: 45vw;
+
+                        .single-card {
+
+                            .staff-content {
+                                color: white;
+                                width: 300px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1025px) {
+    main {
+        .our-team {
+            .container-our-team {
+
+                .team-row {
+
+                    .team-card {
+                        width: 32vw;
+                        height: 32vw;
+                        min-width: 345px;
+                        min-height: 345px;
+
+                        .single-card {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .staff-content {
+                                min-width: 300px;
+                                height: 300px;
+                            }
                         }
                     }
                 }

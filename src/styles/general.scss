@@ -5,6 +5,7 @@
   font-family: "Quicksand", sans-serif;
 }
 
+
 .h1,
 .h2,
 .h3,
@@ -22,6 +23,7 @@ h6 {
 
 main {
   padding-top: 97px;
+  width: 100%;
   // overflow: hidden;
 }
 
@@ -30,12 +32,10 @@ main {
 // Mobile
 
 // Tablet
-@media all and (max-width: 767px) {
-}
+@media all and (max-width: 767px) {}
 
 // Desktop
-@media all and (max-width: 1024px) {
-}
+@media all and (max-width: 1024px) {}
 
 .wrapper {
   max-width: 1600px;

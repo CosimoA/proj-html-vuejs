@@ -76,6 +76,10 @@ export default {
 @use "../styles/partials/mixins" as *;
 @use "../styles/partials/variables" as *;
 
+img {
+  display: block;
+}
+
 .client-section {
   margin-top: 40rem;
   position: relative;
@@ -169,12 +173,15 @@ export default {
     .card-container {
       padding: 1rem;
     }
+
     .clients-container {
       padding-top: 25rem;
+
       ul {
         @include flex(space_b);
         align-items: center;
         flex-wrap: wrap;
+
         li {
           margin: 0rem 3rem;
         }
@@ -187,19 +194,23 @@ export default {
 @media all and (min-width: 1025px) {
   .client-section {
     margin-top: 20rem;
+
     .card-container {
       @include flex(both);
       align-items: center;
       padding: 1rem;
       top: -15rem;
       gap: 2rem;
+
       .card-nb {
         max-width: 50rem;
+
         h1 {
           font-size: 2.5rem;
         }
       }
     }
+
     .clients-container {
       ul {
         @include flex(space_b);
@@ -207,5 +218,4 @@ export default {
       }
     }
   }
-}
-</style>
+}</style>
