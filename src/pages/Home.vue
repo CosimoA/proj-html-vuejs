@@ -218,40 +218,29 @@ export default {
                             </div>
                         </div>
                         <div class="col">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="/photo-1448932252197-d19750584e56-1024x1024.jpg" class="card-img-top"
-                                        alt="...">
-                                </div>
+                            <div class="card">
+                                <img src="/photo-1448932252197-d19750584e56-1024x1024.jpg" class="card-img-top" alt="...">
                             </div>
                         </div>
                         <div class="col">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="/business-competition-PB366D8-1024x1024.jpg" class="card-img-top" alt="...">
-                                </div>
+                            <div class="card">
+                                <img src="/business-competition-PB366D8-1024x1024.jpg" class="card-img-top" alt="...">
                             </div>
                         </div>
                         <div class="col">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" class="card-img-top"
-                                        alt="...">
-                                </div>
+                            <div class="card">
+                                <img src="/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" class="card-img-top" alt="...">
                             </div>
                         </div>
                         <div class="col">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="/aa9a4539-PQGJ7HU-1024x1024.jpg" class="card-img-top" alt="...">
-                                </div>
+                            <div class="card">
+                                <img src="/aa9a4539-PQGJ7HU-1024x1024.jpg" class="card-img-top" alt="...">
                             </div>
+
                         </div>
                         <div class="col">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="/cody-davis-253928-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
-                                </div>
+                            <div class="card">
+                                <img src="/cody-davis-253928-unsplash-1024x1024.jpg" class="card-img-top" alt="...">
                             </div>
                         </div>
                     </div> <!--row-->

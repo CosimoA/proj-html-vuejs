@@ -123,9 +123,29 @@ li a:hover {
     margin-top: 3em;
 }
 
+.feat_card:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #8ddc63, #1cd595);
+    border-radius: 2em;
+}
+
+.card_text:hover {
+    color: #ffffff;
+}
 
 .misscard_container {
     position: relative;
+}
+
+.card {
+    transition: all 1.5s ease;
+}
+
+.card img:hover {
+    transition: 2s;
+    transform: scale(1.1);
+    border-radius: 15px;
+    background-color: linear-gradient(to right, #8ddc63, #1cd595) !important;
 }
 
 .box_card {
