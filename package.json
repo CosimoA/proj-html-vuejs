@@ -2,8 +2,11 @@
   "name": "proj-html-vuejs",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://oosimoa.github.io/proj-html-vuejs/",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -18,6 +21,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
+    "gh-pages": "^6.1.1",
     "sass": "^1.69.7",
     "vite": "^5.0.8"
   }
