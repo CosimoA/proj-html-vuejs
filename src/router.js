@@ -9,7 +9,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/proj-html-vuejs/home',
+            path: '/proj-html-vuejs',
             name: 'Home',
             component: Home
         }, {

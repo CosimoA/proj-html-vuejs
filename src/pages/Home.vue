@@ -8,19 +8,19 @@ export default {
 
       slides: [
         {
-          image: "Group-36-2x.png",
+          image: "./Group-36-2x.png",
           title: "We Are a Web Design",
           title_col: "Agency",
           text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.",
         },
         {
-          image: "Group-40-2x.png",
+          image: "./Group-40-2x.png",
           title: "A Group of Expert",
           title_col: "Planners",
           text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.",
         },
         {
-          image: "Group-35-2x.png",
+          image: "./Group-35-2x.png",
           title: "Focus on Your",
           title_col: "Business",
           text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they lived in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.",
@@ -29,42 +29,42 @@ export default {
 
       webDesigns: [
         {
-          image: "url('/flowers.jpg')",
+          image: "url('./flowers.jpg')",
           title: "The Basket of Flowers",
           scope: ["BRANDING", "MARKETING"],
         },
         {
-          image: "url('/ruota.jpg')",
+          image: "url('./ruota.jpg')",
           title: "A Famous Ferris Wheel",
           scope: ["MARKETING"],
         },
         {
-          image: "url('/scarpe.jpg')",
+          image: "url('./scarpe.jpg')",
           title: "Complementary Colors",
           scope: ["BRANDING", "MARKETING"],
         },
         {
-          image: "url('/desk.jpg')",
+          image: "url('./desk.jpg')",
           title: "Business Prestige",
           scope: ["BRANDING"],
         },
         {
-          image: "url('/origami.jpg')",
+          image: "url('./origami.jpg')",
           title: "Colorful Origami Boats",
           scope: ["BRANDING", "MARKETING"],
         },
         {
-          image: "url('/sofa.jpg')",
+          image: "url('./sofa.jpg')",
           title: "Modern Coach",
           scope: ["MARKETING"],
         },
         {
-          image: "url('/mongolfiere.jpg')",
+          image: "url('./mongolfiere.jpg')",
           title: "Hot Air Ballons",
           scope: ["BRANDING", "MARKETING"],
         },
         {
-          image: "url('/arance.jpg')",
+          image: "url('./arance.jpg')",
           title: "Make Difference",
           scope: ["BRANDING"],
         },

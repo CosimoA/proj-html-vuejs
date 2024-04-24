@@ -68,7 +68,7 @@ export default {
       <section>
         <!-- LOGO -->
         <div class="logo">
-          <router-link to="/" ref="homeLink" class="menu-link" :class="{ active: currentPage === 'Home' }"
+          <router-link to="/proj-html-vuejs" ref="homeLink" class="menu-link" :class="{ active: currentPage === 'Home' }"
             @click="handleLogoClick">
             <img src="../assets/cropped-Group-39-2x.png" alt="Logo" />
           </router-link>
@@ -84,7 +84,7 @@ export default {
             </div>
             <ul>
               <li v-for="link in navLinksList" :key="link">
-                <router-link :to="link.toLowerCase() === 'home' ? '/' : link.toLowerCase()" class="menu-link"
+                <router-link :to="link.toLowerCase() === 'home' ? '/proj-html-vuejs' : link.toLowerCase()" class="menu-link"
                   :class="{ active: link === currentPage }" @click="setActiveLink(link)">
                   {{ link }}
                 </router-link>

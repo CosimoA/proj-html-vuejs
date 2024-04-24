@@ -5,27 +5,27 @@ export default {
     return {
       icons: [
         {
-          src: "/client-1-2x.png",
+          src: "./client-1-2x.png",
           alt: "clientlogo1",
         },
         {
-          src: "/client-9-2x.png",
+          src: "./client-9-2x.png",
           alt: "clientlogo2",
         },
         {
-          src: "/client-7-2x.png",
+          src: "./client-7-2x.png",
           alt: "clientlogo3",
         },
         {
-          src: "/client-3-2x.png",
+          src: "./client-3-2x.png",
           alt: "clientlogo4",
         },
         {
-          src: "/client-4-2x.png",
+          src: "./client-4-2x.png",
           alt: "clientlogo5",
         },
         {
-          src: "/client-5-2x.png",
+          src: "./client-5-2x.png",
           alt: "clientlogo6",
         },
       ],
