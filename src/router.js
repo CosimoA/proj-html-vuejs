@@ -9,15 +9,15 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/',
+            path: '/proj-html-vuejs/home',
             name: 'Home',
             component: Home
         }, {
-            path: '/about',
+            path: '/proj-html-vuejs/about',
             name: 'About',
             component: About
         }, {
-            path: '/contacts',
+            path: '/proj-html-vuejs/contacts',
             name: 'Contacts',
             component: Contacts
         },
